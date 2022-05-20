@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day4 pr1</title>
+</head>
+<body>
+    <h2>Define a function called callback which receives an argument and prints the square of that number.</h2>
+
+    <form>
+    <p>Enter Number to calculate square : <input type="text" id="num"></p>
+    <button id="btn1" type="button" onclick="square(num.value,print)">calculate</button>
+    </form>
+    <p id="sq"></p>
+
+    <script>
+        function square(a,callback){
+            let c= a*a;
+            callback(c);
+        }
+        function print(ans){
+            document.getElementById("sq").innerHTML="Square is : "+ans;
+        }
+        
+    </script>
+</body>
+</html>

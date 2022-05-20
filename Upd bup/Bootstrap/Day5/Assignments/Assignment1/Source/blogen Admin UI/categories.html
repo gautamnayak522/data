@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogen Admin UI</title>
+    <link href="../../../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../../node_modules/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark p-0" aria-label="">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">Blogen</a>
+            <button class="navbar-toggler" data-bs-toggel="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="posts.html" class="nav-link">Posts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="categories.html" class="nav-link active">Categories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="users.html" class="nav-link">Users</a>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown mr-3">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                            <span class="fa fa-user"></span> Welcome Brad
+                        </a>
+                        <div class="dropdown-menu">
+                            <a href="Profile.html" class="dropdown-item">
+                                <span class="fa fa-user-circle"></span> Profile
+                            </a>
+                            <a href="settings.html" class="dropdown-item">
+                                <span class="fa fa-gear"></span> Setting
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="login.html" class="nav-link">
+                            <span class="fa fa-user-times"></span> Logout
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header id="main-header" class="py-2 bg-success text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1><span class="fa fa-folder"></span> Categories</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="action" class="py-4 mb-4 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 ml-auto">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                        <span class="input-group-btn">
+                            <button class="btn btn-success"> Search</button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="posts">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>Latest Categories</h4>
+                        </div>
+
+                        <table class="table table-striped">
+                            <caption>table1</caption>
+                            <thead class="thead-inverse">
+                                <tr>
+                                    <th>#</th>
+                                    <th>Category</th>
+                                    <th>Date Posted</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Web Development</td>
+                                    <td>July 11, 2017</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td> 
+                                
+                                    <td>Tech Gadgets</td>
+                                    <td>July 12, 2017</td>
+                                
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                
+                                    <td>Health</td>
+                                    <td>July 12, 2017</td>
+                                
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                
+                                    <td>Politics</td>
+                                    <td>July 13, 2017</td>
+                                
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                
+                                    <td>Web Development</td>
+                                    <td>July 14, 2017</td>
+                                
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                
+                                    <td>Health & Wellness</td>
+                                    <td>July 15, 2017</td>
+                                
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <nav class="ml-4" aria-label="n"> 
+                            <ul class="pagination">
+                                <li class="page-item disabled"><a href="#" class="page-link"> Previous </a></li>
+                                <li class="page-item active"><a href="#" class="page-link"> 1 </a></li>
+                                <li class="page-item"><a href="#" class="page-link"> 2 </a></li>
+                                <li class="page-item"><a href="#" class="page-link"> 3 </a></li>
+                                <li class="page-item"><a href="#" class="page-link"> Next </a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="main-footer" class="bg-dark text-white mt-5 p-5">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <p class="lead text-center">Copyright &copy; 2021 Blogen</p>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="../../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+   
+</body>
+
+</html>

@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../../dist/output.css" rel="stylesheet">
+    <title>Flipkart with Tailwind</title>
+    <link href="../../node_modules/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <script src="../../node_modules/tw-elements/dist/js/index.min.js"></script>
+
+    <header class="bg-blue-500 w-full h-14 flex">
+        <div class="w-1/5 text-right">
+            <a href="#" class="text-white font-bold text-xl italic">Flipkart</a>
+            <p class="text-xs text-white hover:underline">Explore <span class="text-yellow-300">Plus <span
+                        class="fa fa-plus"></span></span></p>
+        </div>
+        <div class="w-2/5 text-left relative pl-5 flex items-center">
+            <input class="w-full text-left pl-5 h-9" type="text" placeholder=" Search for products,Brands and more">
+            <span class="fa fa-search text-blue-500 absolute text-right right-3"></span>
+        </div>
+        <div class="w-2/5 text-sm flex items-center justify-evenly p-3">
+            <a href="#" class="bg-white text-blue-500 px-7 py-1">Login</a>
+            <a href="#" class="text-white">More <span class="fa fa-sort-down"> </span></a>
+            <a href="#" class="text-white"><span class="fa fa-shopping-cart"></span> Cart</a>
+        </div>
+    </header>
+
+    <div id="categories" class="container bg-slate-100 w-full mt-2 grid grid-flow-col justify-evenly p-2">
+        <div class="hover:text-blue-700 hover:cursor-pointer">
+            <img src="asset/img/top-offers.png" alt="topoffres" width="70px">
+            <h1 class="font-medium">Top Offers</h1>
+        </div>
+        <div class="hover:text-blue-700 hover:cursor-pointer">
+            <img src="asset/img/grocery.png" alt="topoffres" width="70px">
+            <h1 class="font-medium">Grocery</h1>
+        </div>
+        <div class="hover:text-blue-700 hover:cursor-pointer">
+            <img src="asset/img/mobiles.png" alt="topoffres" width="70px">
+            <h1 class="font-medium">Mobile</h1>
+        </div>
+        <div class="hover:text-blue-700 hover:cursor-pointer">
+            <img src="asset/img/fashion.png" alt="topoffres" width="70px">
+            <h1 class="font-medium">Fashion</h1>
+        </div>
+        <div class="hover:text-blue-700 hover:cursor-pointer">
+            <img src="asset/img/electronics.png" alt="topoffres" width="70px">
+            <h1 class="font-medium">Electronics</h1>
+        </div>
+        <div class="hover:text-blue-700 hover:cursor-pointer">
+            <img src="asset/img/home.jpg" alt="topoffres" width="70px">
+            <h1 class="font-medium">Home</h1>
+        </div>
+        <div class="hover:text-blue-700 hover:cursor-pointer">
+            <img src="asset/img/appliances.png" alt="topoffres" width="70px">
+            <h1 class="font-medium">Appliances</h1>
+        </div>
+        <div class="hover:text-blue-700 hover:cursor-pointer">
+            <img src="asset/img/travel.png" alt="topoffres" width="70px">
+            <h1 class="font-medium">Travel</h1>
+        </div>
+        <div class="hover:text-blue-700 hover:cursor-pointer">
+            <img src="asset/img/Beauty, Toys & More.png" alt="topoffres" width="70px">
+            <h1 class="font-medium">Beauty & Toys</h1>
+        </div>
+    </div>
+
+    <div id="slides" class="carousel slide relative" data-bs-ride="carousel">
+        <div class="carousel-inner relative w-full overflow-hidden">
+          <div class="carousel-item active relative float-left w-full">
+            <img
+              src="asset/img/slide1.jpg"
+              class="block w-full"
+              alt="Wild Landscape"
+            />
+          </div>
+          <div class="carousel-item relative float-left w-full">
+            <img
+              src="asset/img/slide2.jpeg"
+              class="block w-full"
+              alt="Camera"
+            />
+          </div>
+          <div class="carousel-item relative float-left w-full">
+            <img
+              src="asset/img/slide3.jpg"
+              class="block w-full"
+              alt="Exotic Fruits"
+            />
+          </div>
+          <div class="carousel-item relative float-left w-full">
+            <img
+              src="asset/img/slide4.jpg"
+              class="block w-full"
+              alt="Exotic Fruits"
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
+          type="button"
+          data-bs-target="#slides"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0"
+          type="button"
+          data-bs-target="#slides"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+    <div class="container bg-slate-100 w-full mt-2 grid grid-flow-row p-2">
+
+        <div class="flex mx-10 items-center justify-between py-3">
+            <h1 class="text-2xl font-bold">Deals Of the Day</h1>
+            <a href="#" class="bg-blue-500 text-white px-7 py-1">View All</a>
+        </div>
+
+        <div class="grid grid-flow-col justify-evenly">
+            <div class="grid justify-items-center cursor-pointer">
+                <img src="asset/img/d1.jpeg" alt="" class="hover:scale-90">
+                <h5 class="text-xl font-medium">Girl's Dresses</h5>
+                <h6 class="text-green-500 font-medium">Min. 60% off</h6>
+                <h6 class="text-slate-400">Hurry, Dont Miss Out</h6>
+            </div>
+            <div class="grid justify-items-center cursor-pointer">
+                <img src="asset/img/d2.jpg" alt="" class="hover:scale-90">
+                <h5 class="text-xl font-medium">Gas Stoves</h5>
+                <h6 class="text-green-500 font-medium">From <span class="fa fa-rupee"></span>1499</h6>
+                <h6 class="text-slate-400">Hurry, Dont Miss Out</h6>
+            </div>
+            <div class="grid justify-items-center cursor-pointer">
+                <img src="asset/img/d3.jpeg" alt="" class="hover:scale-90">
+                <h5 class="text-xl font-medium">ADIDAS shoes</h5>
+                <h6 class="text-green-500 font-medium">Min. 60% off</h6>
+                <h6 class="text-slate-400">Hurry, Dont Miss Out</h6>
+            </div>
+            <div class="grid justify-items-center cursor-pointer">
+                <img src="asset/img/d4.jpg" alt="" class="hover:scale-90">
+                <h5 class="text-xl font-medium">Bike Assesories</h5>
+                <h6 class="text-green-500 font-medium">From <span class="fa fa-rupee"></span>49</h6>
+                <h6 class="text-slate-400">Top selling</h6>
+            </div>
+            <div class="grid justify-items-center cursor-pointer">
+                <img src="asset/img/d5.jpeg" alt="" class="hover:scale-90">
+                <h5 class="text-xl font-medium">Ayurveda</h5>
+                <h6 class="text-green-500 font-medium">Upto 70% off</h6>
+                <h6 class="text-slate-400">Hurry, Dont Miss Out</h6>
+            </div>
+            <div class="grid justify-items-center cursor-pointer">
+                <img src="asset/img/d6.jpeg" alt="" class="hover:scale-90">
+                <h5 class="text-xl font-medium">Jewellery</h5>
+                <h6 class="text-green-500 font-medium">Under <span class="fa fa-rupee"></span>499</h6>
+                <h6 class="text-slate-400">Hurry, Dont Miss Out</h6>
+            </div>
+            <div class="grid justify-items-center cursor-pointer">
+                <img src="asset/img/d7.jpeg" alt="" class="hover:scale-90">
+                <h5 class="text-xl font-medium">Smartwatches</h5>
+                <h6 class="text-green-500 font-medium">Min. 60% off</h6>
+                <h6 class="text-slate-400">just <span class="fa fa-rupee"></span>1899</h6>
+            </div>
+        </div>
+    </div>
+
+    <div class="container bg-slate-100 w-full mt-2 grid grid-flow-col gap-3 items-center p-2">
+        <img src="asset/img/mb1.jpg" alt="" class="h-full">
+        <img src="asset/img/mb2.jpg" alt="">
+        <img src="asset/img/mb3.jpg" alt="">
+    </div>
+
+    <div class="container bg-slate-100 w-full mt-2 grid grid-flow-row p-2">
+
+        <div class="flex mx-10 items-center justify-between py-3">
+            <h1 class="text-2xl font-bold">Top Deals on Assesories</h1>
+            <a href="#" class="bg-blue-500 text-white px-7 py-1">View All</a>
+        </div>
+
+        <div class="grid grid-flow-col justify-evenly gap-2">
+            <div class="grid justify-items-center cursor-pointer">
+                <img src="asset/img/as1.jpeg" alt="" class="hover:scale-90 w-32 h-32">
+                <h5 class="text-xl font-medium">Glass Cases</h5>
+                <h6 class="text-green-500 font-medium">Shop Now</h6>
+                <h6 class="text-slate-400">For all phone Models</h6>
+            </div>
+            <div class="grid justify-items-center cursor-pointer">
+                <img src="asset/img/as2.jpeg" alt="" class="hover:scale-90 w-32 h-32">
+                <h5 class="text-xl font-medium">Laptop Skin Decals</h5>
+                <h6 class="text-green-500 font-medium">Upto 80% off</h6>
+                <h6 class="text-slate-400">FlipkartSmartBuy & More</h6>
+            </div>
+            <div class="grid justify-items-center cursor-pointer">
+                <img src="asset/img/as3.jpeg" alt="" class="hover:scale-90 w-32 h-32">
+                <h5 class="text-xl font-medium">Multi-access Gimbals</h5>
+                <h6 class="text-green-500 font-medium">From <span class="fa fa-rupee"></span>5499</h6>
+                <h6 class="text-slate-400">Kodak, Digitek</h6>
+            </div>
+            <div class="grid justify-items-center cursor-pointer">
+                <img src="asset/img/as4.jpeg" alt="" class="hover:scale-90 w-32 h-32">
+                <h5 class="text-xl font-medium">Mobile Holders</h5>
+                <h6 class="text-green-500 font-medium">From <span class="fa fa-rupee"></span> 99</h6>
+                <h6 class="text-slate-400">Relax your hands while holding</h6>
+            </div>
+            <div class="grid justify-items-center cursor-pointer">
+                <img src="asset/img/as5.jpeg" alt="" class="hover:scale-90 w-32 h-32">
+                <h5 class="text-xl font-medium">WebCams</h5>
+                <h6 class="text-green-500 font-medium">Upto 60% off</h6>
+                <h6 class="text-slate-400">Logitech, Quantum</h6>
+            </div>
+            <div class="grid justify-items-center cursor-pointer">
+                <img src="asset/img/as6.jpeg" alt="" class="hover:scale-90 w-32 h-32">
+                <h5 class="text-xl font-medium">DataCards</h5>
+                <h6 class="text-green-500 font-medium">Upto 60% off</h6>
+                <h6 class="text-slate-400">jioFi and more</h6>
+            </div>
+            <div class="grid justify-items-center cursor-pointer">
+                <img src="asset/img/as7.jpeg" alt="" class="hover:scale-90 w-32 h-32">
+                <h5 class="text-xl font-medium">Keyboard Skins</h5>
+                <h6 class="text-green-500 font-medium">Min. 70% off</h6>
+                <h6 class="text-slate-400">flipkart smartbuy & More</h6>
+            </div>
+            <div class="grid justify-items-center cursor-pointer">
+                <img src="asset/img/as8.jpeg" alt="" class="hover:scale-90 w-32 h-32">
+                <h5 class="text-xl font-medium">Routers</h5>
+                <h6 class="text-green-500 font-medium">From <span class="fa fa-rupee"></span>799</h6>
+                <h6 class="text-slate-400">MI, TP-links & more</h6>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-[#172337] text-white mt-3 p-5 grid grid-flow-col gap-4">
+        <div>
+            <div class="text-[#878787] pb-3">
+                <p>ABOUT</p>
+           </div>
+           <div class="grid">
+               <a href="#">Contact Us</a>
+               <a href="#">About Us</a>
+               <a href="#">Careers</a>
+               <a href="#">Flipkart Stories</a>
+               <a href="#">Press</a>
+               <a href="#">Flipkart Wholesale</a>
+               <a href="#">Corporate information</a>
+           </div>
+        </div>
+        <div>
+            <div class="text-[#878787] pb-3">
+                <p>HELP</p>
+           </div>
+           <div class="grid">
+               <a href="#">Payments</a>
+               <a href="#">Shipping</a>
+               <a href="#">Cancellation & Returns</a>
+               <a href="#">FAQ</a>
+               <a href="#">Report Infringement</a> 
+           </div>
+        </div>
+        <div>
+            <div class="text-[#878787] pb-3">
+                <p>POLICY</p>
+           </div>
+           <div class="grid">
+               <a href="#">Return Policy</a>
+               <a href="#">Terms Of Use</a>
+               <a href="#">Security</a>
+               <a href="#">Privacy</a>
+               <a href="#">Sitemap</a>
+               <a href="#">EPR Compliance</a>
+           </div>
+        </div>
+        <div>
+            <div class="text-[#878787] pb-3">
+                <p>SOCIAL</p>
+           </div>
+           <div class="grid">
+               <a href="#">Facebook</a>
+               <a href="#">Twitter</a>
+               <a href="#">YouTube</a>  
+           </div>
+        </div>
+
+     
+        <div>
+            <div class="text-[#878787] pb-3">
+                <p>Mail Us</p>
+           </div>
+           <div>
+                <p class="w-60">Flipkart Internet Private Limited,
+                   Buildings Alyssa, Begonia &
+                   Clove Embassy Tech Village,
+                   Outer Ring Road, Devarabeesanahalli Village,
+                   Bengaluru, 560103,
+                   Karnataka, India</p>
+             </div>
+        </div>
+        <div>
+            <div class="text-[#878787] pb-3">
+                <p>Registered Office Address</p>
+           </div>
+         
+            <p class="w-52">
+                Flipkart Internet Private Limited,
+                Buildings Alyssa, Begonia &
+                Clove Embassy Tech Village,
+                Outer Ring Road, Devarabeesanahalli Village,
+                Bengaluru, 560103,
+                Karnataka, India
+                CIN : U51109KA2012PTC066107
+                Telephone: <span class="text-blue-500">1800 202 9898</span>
+            </p>
+         
+        </div>
+     
+    </footer>
+
+        
+   
+</body>
+</html>

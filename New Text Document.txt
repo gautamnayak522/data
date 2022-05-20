@@ -1,0 +1,21 @@
+getmac /v /fo list
+Bootstrap 5
+Angular
+npm install bootstrap --save
+src/style.css
+@import "~bootstrap/dist/css/bootstrap.css";
+
+
+import 'bootstrap/dist/js/bootstrap.bundle.js'
+
+import in main.ts like this
+
+
+Vue
+npm.cmd i --save bootstrap bootstrap-vue-3
+import "bootstrap/dist/css/bootstrap.min.css"
+
+React
+npm install react-bootstrap bootstrap
+index.js
+import 'bootstrap/dist/css/bootstrap.min.css';

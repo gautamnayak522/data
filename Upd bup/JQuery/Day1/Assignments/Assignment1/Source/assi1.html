@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"
+            href="../../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <script src="../../jquery.min.js"></script>
+        <title>Day1 Assi1</title>
+
+        <script>
+        $(document).ready(function (){
+            var country=["India","USA","UAE","China","Russia"]
+            $.each(country,function(index,data){
+                $("#menu").append($("<option value='"+data+"'></option>").html(data))
+            })
+            $.each(country,function(index,data){
+                $("#result").append($("<li>"+data+"<li>"));
+            })
+
+            $("#menu").change(function (){
+                
+                countryVal=$("#menu option:selected").val();
+
+                if(countryVal==""){
+                    $("#result").html("")
+                    $.each(country,function(index,data){
+                    $("#result").append($("<li>"+data+"<li>"));
+                    })
+                }
+                else{
+                    $("#result").html("")
+                    $("#result").append($("<li>"+countryVal+"<li>"));
+                }
+            });
+            
+        });
+    </script>
+    </head>
+    <body>   
+        <label for="" >Please select your Country :</label>
+            <select id="menu" class="form-select w-50">
+                <option value="" selected>--select--</option>
+            </select>
+            <label for="result" class="mt-5 text-center">Selected Country is : 
+                <ul class="list-unstyled" id="result">
+                </ul>
+            </label>
+    </body>
+</html>

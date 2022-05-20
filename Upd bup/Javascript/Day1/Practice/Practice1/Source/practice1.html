@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Practice</title>
+</head>
+<body>
+
+    <p id="first"></p>
+    <p id="second"></p>
+    <p id="third"></p>
+    <p id="add"></p>
+    <p id="LargeNumber"></p>
+    <p id="add40"></p>
+    
+    <script>
+    const num1= parseInt(prompt("Enter first number : "));
+    const num2= parseInt(prompt("Enter Second number : "));
+    const num3= parseInt(prompt("Enter Third number : "));
+
+
+    document.getElementById("first").innerHTML = "First Value : " + num1;
+    document.getElementById("second").innerHTML = "Second Value : " + num2;
+    document.getElementById("third").innerHTML = "Third Value : " + num3;
+
+    if(Number.isNaN(num1)){
+        document.write("enter valid details (Only Numbers)")
+    }
+    else if(Number.isNaN(num2)){
+        document.write("enter valid details (Only Numbers)")
+    }
+    else if(Number.isNaN(num3)){
+        document.write("Incorrect Third Value : enter valid details (Only Numbers)")
+    }
+    else{
+    document.getElementById("add").innerHTML = "Addition of three values is  : " + (num1+num2+num3);
+
+    let large;
+    if(num1>=num2 && num1>=num3){
+        large=num1;
+    }
+    else if(num2 >= num1 && num2 >= num3){
+        large=num2;
+    }
+    else{
+        large=num3;
+    }
+    document.getElementById("LargeNumber").innerHTML = "Largest Among three is   : " + large;
+    
+    let sum=0;
+    if(num1>40)
+    {
+        sum=sum+num1;
+    }
+    if(num2>40){
+        sum=sum+num2;
+    }
+    if(num3>40){
+        sum=sum+num3;
+    }
+    document.getElementById("add40").innerHTML = "Sum of above 40 values is : " + sum;
+    }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day2 Pr3</title>
+</head>
+<body>
+    <h2>Write a JavaScript function to extract a specified number of characters from a string.</h2>
+    <p id="original"></p>
+    <p id="extract"></p>
+
+    <script>
+        const str=prompt("Enter String : ");
+        const len=prompt("Enter no. of character to extract from string")
+        if(str.length==0){
+            document.getElementById("original").innerHTML="Entered String length is zero";
+        }
+        else if(len>str.length){
+            document.getElementById("original").innerHTML="Entered no. of characters is greater than original string";
+        }
+        else{
+            document.getElementById("original").innerHTML="Entered String is : "+str;
+            document.getElementById("extract").innerHTML="Extracted String is : "+ str.slice(0,len);
+        }
+    </script>
+</body>
+</html>

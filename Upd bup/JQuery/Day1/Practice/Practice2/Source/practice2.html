@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day1 pr2</title>
+    <script src="../../jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("span").hide();
+            $("p").mouseenter(function () {
+                $("span").show();
+            });
+            $("p").mouseleave(function () {
+                $("span").hide();
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <p>HELP ?</p>
+    <span>FOR HELP CONTACT ADMIN</span>
+</body>
+
+</html>

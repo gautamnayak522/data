@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../../jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+
+            $("p").click(function(){
+                $(this).hide();
+            });
+            
+            $("#btn").hover(function(){
+                $("#btn").css("color","red");
+                $("#test").html("click to hide all p"); 
+            },
+            function(){
+                $("#btn").css("color","");
+                $("#test").html("ok");  
+            });
+
+            $("span").on({
+                mouseenter:function(){
+                    $(this).css("background-color","green");
+                },
+                mouseleave:function(){
+                    $(this).css("background-color","red");
+                },
+                click:function(){
+                    $(this).css("background-color","blue");
+                }
+            })
+
+            $("#btn").click(function(){
+                $("p").hide(1000);
+            });
+            $("#btn2").click(function(){
+                $("p").show(1000);
+            });
+            $("#btn3").click(function(){
+                $("p").toggle(1000);
+            });
+        });
+    </script>
+</head>
+<body>
+    <p>Hello</p>
+    <p>Good</p>
+    <p>Good</p>
+    <p>Good</p>
+    <span>TESTING</span>
+    <button id="btn">Hide all P</button>
+    <button id="btn2">Show all P</button>
+    <button id="btn3">Show/Hide Toggle</button>
+    <p id="test"></p>
+    
+</body>
+</html>

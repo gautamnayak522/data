@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Day5 ex2</title>
+    <style>
+        .check{
+            color: red;
+        }
+        @media only screen and (max-width: 600px) {
+        .check {
+            background-color:yellow;
+        }
+        }
+        @media only screen and (min-width: 600px) {
+        .check {
+            background-color:wheat;
+        }       
+        }
+        @media only screen and (min-width: 800px) {
+        .check {
+            background-color:aqua;
+        }
+        }
+    </style>
+</head>
+<body>
+    <h1 class="check">Exercise 2 with breakpoint</h1>
+    <p class="check">You have one and one paragraph in your page with blue color border. For all the media screen and query selector (maximum width 500px) it should be change to red color border.</p>
+</body>
+</html>

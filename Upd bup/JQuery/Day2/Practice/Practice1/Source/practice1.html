@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day2 pr1</title>
+
+    <script src="../../jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("p").filter(".intro").css("background-color", "yellow");
+            $("p").not(".intro").css("background-color", "blue");
+        });
+    </script>
+</head>
+
+<body>
+    <h2>jQuery Traversing</h2>
+
+    <p>My name is Donald.</p>
+    <p class="intro">I live in Duckburg.</p>
+    <p class="intro">I love Duckburg.</p>
+    <p>My best friend is Mickey.</p>
+
+    <ul>
+        <li>Name : ABCD</li>
+        <li>Age : 21</li>
+    </ul>
+
+
+</body>
+
+</html>

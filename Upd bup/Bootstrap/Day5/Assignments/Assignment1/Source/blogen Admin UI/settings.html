@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogen Admin UI</title>
+    <link href="../../../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../../node_modules/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark p-0">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">Blogen</a>
+            <button class="navbar-toggler" data-bs-toggel="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="posts.html" class="nav-link">Posts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="categories.html" class="nav-link">Categories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="users.html" class="nav-link">Users</a>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown mr-3">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                            <span class="fa fa-user"></span> Welcome Brad
+                        </a>
+                        <div class="dropdown-menu">
+                            <a href="Profile.html" class="dropdown-item">
+                                <span class="fa fa-user-circle"></span> Profile
+                            </a>
+                            <a href="settings.html" class="dropdown-item">
+                                <span class="fa fa-gear"></span> Setting
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="login.html" class="nav-link">
+                            <span class="fa fa-user-times"></span> Logout
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header id="main-header" class="py-2 bg-primary text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1><span class="fa fa-gear"></span> Settings</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="action" class="py-4 mb-4 bg-ligh ms-auto">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <a href="index.html" class="btn btn-light btn-block">
+                    <span class="fa fa-arrow-left"></span> Back to Dashboard </a>
+                </div>
+
+                <div class="col-md-3">
+                    <a href="" class="btn btn-success btn-block">
+                        <span class="fa fa-arrow-check"></span> Save Changes </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="settings">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>Edit Settings</h4>
+                        </div>
+                        <div class="card-body">
+                            <form >
+                                <fieldset class="form-group">
+                                    <legend>Allow User Registration</legend>
+                                    <div class="form-check">
+                                        <label for="" class="form-check-label">
+                                            <input type="radio" class="form-check-input" value="yes" checked name="reg">Yes
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <label for="" class="form-check-label">
+                                            <input type="radio" class="form-check-input" value="yes" name="reg" >No
+                                        </label>
+                                    </div>
+                                </fieldset>
+             
+                                <fieldset class="form-group">
+                                    <legend>Home Page Format</legend>
+                                    <div class="form-check">
+                                        <label for="" class="form-check-label">
+                                            <input type="radio" class="form-check-input" value="yes" checked name="page">Post Index
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <label for="" class="form-check-label">
+                                            <input type="radio" class="form-check-input" value="yes" name="page">Single Page
+                                        </label>
+                                    </div>
+                                </fieldset> 
+                            </form>
+                        </div>
+                      
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="main-footer" class="bg-dark text-white mt-5 p-5">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <p class="lead text-center">Copyright &copy; 2021 Blogen</p>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="../../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    
+</body>
+
+</html>

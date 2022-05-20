@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../../../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../../node_modules/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <title>Mizuxe Project2</title>
+    <style>
+        body{
+            margin-top: 105px;
+        }
+        .navbar{
+            box-shadow: 2px 2px 5px #3292a6;
+            opacity:0.9;
+            background: #fff;
+        }
+        .nav-item{
+            font-size: 1.4rem;
+            padding-right: 20px;
+        }
+        #showcase{
+            position: relative;
+            background: url(/BOOTSTRAP/img/mountain.jpg) no-repeat;
+            min-height: 600px;  
+        }
+        .primary-overlay{
+            background:rgba(50, 146, 166, 0.8);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .info-header{
+            width:50%;
+            margin: auto;
+            border-bottom: 1px #ddd solid;
+        }
+        #authors img{
+            margin-top: -50px;
+        }
+        #authors .fa{
+            font-size: 25px;
+        }
+        #authors .card:hover{
+            background: rgb(146, 146, 204);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-light fixed-top py-4">
+        <div class="container">
+            <a href="mizuxe.html" class="navbar-brand">
+                <img src="../../img/m-logo.jpg" alt="." width="50" height="50">
+                <h3 class="d-inline align-middle">Mizuxe</h3>
+            </a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav"> 
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="#showcase" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#authors" class="nav-link">Authors</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="py-5" id="showcase">
+        <div class="primary-overlay text-white">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 text-center">
+                        <h1 class="display-2 mt-5 pt-5">
+                            SO what you Dream of...
+                        </h1>
+                        <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum, nam provident voluptates est sequi maiores obcaecati molestiae eaque! Inventore delectus nulla </p>
+                        <a href="#" class="btn btn-outline-primary btn-lg text-white">
+                            <span class="fa fa-arrow-right"></span>Read More</a>
+                    </div>
+                    <div class="col-lg-6 d-none d-lg-block">
+                        <img src="../../img/poster.jpg" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="newsletter" class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <input type="text" class="form-control form-control-lg" placeholder="Enter Name">
+                </div>
+                <div class="col-md-4">
+                   <input type="email" class="form-control form-control-lg" placeholder="Enter Email">
+                </div>
+                <div class="col-md-4">
+                   <button class="btn btn-primary btn-lg btn-block"><span class="fa fa-envelope-open-o"> Subscribe</span></button> 
+                </div> 
+            </div>
+        </div>
+    </section>
+
+    <section id="boxes" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card text-center border-primary">
+                        <div class="card-body">
+                            <h3 class="text-primary">
+                                Be Better
+                            </h3>
+                            <p class="text-muted">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, reprehenderit!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card text-center bg-primary text-white">
+                        <div class="card-body">
+                            <h3>
+                                Be Better
+                            </h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, reprehenderit!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card text-center border-primary">
+                        <div class="card-body">
+                            <h3 class="text-primary">
+                                Be Better
+                            </h3>
+                            <p class="text-muted">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, reprehenderit!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card text-center bg-primary text-white">
+                        <div class="card-body">
+                            <h3>
+                                Be Better
+                            </h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, reprehenderit!</p>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="my-5 py-5 text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="info-header mb-5">
+                        <h1 class="text-primary pb-3"> Why this Book ?</h1>
+                        <p class="lead pb-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque inventore quam esse, quod velit possimus. Laboriosam, adipisci libero dolore ab delectus ipsa vitae veritatis fugiat!</p>
+                    </div>
+                    
+
+                    <div id="accordion" role="tablist">
+
+                        <div class="card">
+                            <div class="card-header" id="heading1">
+                                <h5 class="mb-0">
+                                    <div href="#collapse1" data-bs-toggle="collapse" data-parent="#accordion">
+                                        <span class="fa fa-arrow-circle-down"></span> Get Inspired
+                                    </div>
+                                </h5>
+                            </div>
+                            <div id="collapse1" class="collapse show">
+                                <div class="card-body">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non, accusamus? Deserunt consequatur voluptatibus fugiat qui, ullam minima quaerat ut nobis voluptates vero odit fuga voluptatem.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header" id="heading2">
+                                <h5 class="mb-0">
+                                    <div href="#collapse2" data-bs-toggle="collapse" data-parent="#accordion">
+                                        <span class="fa fa-arrow-circle-down"></span> Gain the knowledge
+                                    </div>
+                                </h5>
+                            </div>
+                            <div id="collapse2" class="collapse">
+                                <div class="card-body">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non, accusamus? Deserunt consequatur voluptatibus fugiat qui, ullam minima quaerat ut nobis voluptates vero odit fuga voluptatem.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header" id="heading3">
+                                <h5 class="mb-0">
+                                    <div href="#collapse3" data-bs-toggle="collapse" data-parent="#accordion">
+                                        <span class="fa fa-arrow-circle-down"></span> Open your mind
+                                    </div>
+                                </h5>
+                            </div>
+                            <div id="collapse3" class="collapse">
+                                <div class="card-body">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non, accusamus? Deserunt consequatur voluptatibus fugiat qui, ullam minima quaerat ut nobis voluptates vero odit fuga voluptatem.
+                                </div>
+                            </div>
+                        </div>
+
+                   </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="authors" class="my-5 text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="info-header mb-5">
+                        <h1 class="text-primary pb-3"> Meet the Authors</h1>
+                        <p class="lead pb-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque inventore quam esse, quod velit possimus. Laboriosam, adipisci libero dolore ab delectus ipsa vitae veritatis fugiat!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="../../img/auth1.jpg" alt="" class="img-fluid rounded-circle w-50 mb-3">
+                            <h3>Susan Willy</h3>
+                            <h5 class="text-muted">Lead writer</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quos similique quas deleniti ex magnam!</p>
+                            <div class="d-flex flex-row justify-content-center">
+                                <div class="p-4">
+                                    <a href="#"><span class="fa fa-facebook"></span></a>
+                                </div>
+                                <div class="p-4">
+                                    <a href="#"><span class="fa fa-twitter"></span></a>
+                                </div>
+                                <div class="p-4">
+                                    <a href="#"><span class="fa fa-instagram"></span></a>
+                                </div>
+                             </div>
+                        </div>
+                     </div>     
+                </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="../../img/auth2.jpg" alt="" class="img-fluid rounded-circle w-50 mb-3">
+                                <h3>Susan Willy</h3>
+                                <h5 class="text-muted">Lead writer</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quos similique quas deleniti ex magnam!</p>
+                                <div class="d-flex flex-row justify-content-center">
+                                    <div class="p-4">
+                                        <a href="#"><span class="fa fa-facebook"></span></a>
+                                    </div>
+                                    <div class="p-4">
+                                        <a href="#"><span class="fa fa-twitter"></span></a>
+                                    </div>
+                                    <div class="p-4">
+                                        <a href="#"><span class="fa fa-instagram"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>     
+                </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="../../img/auth3.jpg" alt="" class="img-fluid rounded-circle w-50 mb-3">
+                                <h3>Susan Willy</h3>
+                                <h5 class="text-muted">Lead writer</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quos similique quas deleniti ex magnam!</p>
+                                <div class="d-flex flex-row justify-content-center">
+                                    <div class="p-4">
+                                        <a href="#"><span class="fa fa-facebook"></span></a>
+                                    </div>
+                                    <div class="p-4">
+                                        <a href="#"><span class="fa fa-twitter"></span></a>
+                                    </div>
+                                    <div class="p-4">
+                                        <a href="#"><span class="fa fa-instagram"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>     
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="../../img/auth4.jpg" alt="" class="img-fluid rounded-circle w-50 mb-3">
+                            <h3>Susan Willy</h3>
+                            <h5 class="text-muted">Lead writer</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quos similique quas deleniti ex magnam!</p>
+                            <div class="d-flex flex-row justify-content-center">
+                                <div class="p-4">
+                                    <a href="#"><span class="fa fa-facebook"></span></a>
+                                </div>
+                                <div class="p-4">
+                                    <a href="#"><span class="fa fa-twitter"></span></a>
+                                </div>
+                                <div class="p-4">
+                                    <a href="#"><span class="fa fa-instagram"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                </div>     
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section id="contact" class="bg-light py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9">
+                    <h3>Get in Touch</h3>
+                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nobis reprehenderit adipisci commodi aperiam incidunt delectus iure non neque et quis, sequi numquam, illum perferendis!</p>
+                <form>
+                    <div class="form-group">
+                        <div class="input-group input-group-lg">
+                            <span class="input-group-addon"><span class="fa fa-user"></span></span>
+                            <input type="text" class="form-control" placeholder="Name">
+                        </div>
+                    </div>
+                    <div class="form-group mb-3">
+                        <div class="input-group input-group-lg">
+                            <span class="input-group-addon"><span class="fa fa-envelope"></span></span>
+                            <input type="email" class="form-control" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="form-group mb-3">
+                        <div class="input-group input-group-lg">
+                            <span class="input-group-addon"><span class="fa fa-pencil"></span></span>
+                            <textarea class="form-control" placeholder="Message" rows="5"></textarea>
+                        </div>
+                    </div>
+                    <input type="submit" class="btn btn-primary btn-block btn-lg">
+                </form>
+                </div>
+                <div class="col-lg-3 align-self-center">
+
+                    <img src="../../img/m-logo.jpg" alt="" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="main-footer" class="py-3 bg-primary text-white">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-6 mx-auto">
+                    <p class="lead">Copyright &copy; 2017</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+ 
+</body>
+</html>

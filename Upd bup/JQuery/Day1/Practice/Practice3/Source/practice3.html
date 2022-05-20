@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day1 pr3</title>
+    <script src="../../jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("input[type='radio']").click(function(){
+        	    var radioValue = $("input[name='tech']:checked").val();
+                if(radioValue){
+                $("#technology").html("You have selected : " + radioValue );
+            }
+        });
+        });
+    </script>
+</head>
+
+<body>
+    <label for="" >Please select your technology :</label>
+    <span id="technology"></span><br/>
+    <input type="radio" name="tech" value="php">PHP
+    <input type="radio" name="tech" value="asp.net">ASP.NET
+    <input type="radio" name="tech" value="asp">ASP
+    <input type="radio" name="tech" value="jsp">JSP
+    <input type="radio" name="tech" value="perl">PERL
+    <input type="radio" name="tech" value="cold fusion">Cold Fusion
+    <input type="radio" name="tech" value="other">Other
+
+    
+</body>
+
+</html>

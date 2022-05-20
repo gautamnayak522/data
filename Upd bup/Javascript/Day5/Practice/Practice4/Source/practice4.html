@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day5 pr4</title>
+</head>
+
+<body>
+    <form action="">
+        <h2>Using Function call create employee object with field Name, Address and Designation and pass it to function.</h2>
+        <p id="check"></p>
+    </form>
+    <script>
+        const myObject = {
+          field_name:"Engineering",
+          Address: "Ahmedabad",
+          Designation: "Trainee",
+          fullDetails: function() {
+            return this.field_name + ", " + this.Address + ", " + this.Designation;
+          }
+        }
+        document.getElementById("check").innerHTML = myObject.fullDetails();
+        </script>
+        
+</body>
+
+</html>

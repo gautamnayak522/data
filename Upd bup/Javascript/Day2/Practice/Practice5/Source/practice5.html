@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day2 pr5</title>
+</head>
+<body>
+    <h2>Operation with list like push, pop, shifting, deleting element</h2>
+    <p id="arr"></p>
+    <p id="arr2"></p>
+    <p id="arr3"></p>
+    <p id="arr4"></p>
+    <p id="arr5"></p>
+    <script>
+        const fruits = ["Banana", "Orange", "Apple", "Mango"];
+        document.getElementById("arr").innerHTML= "List Of Fruits : " + fruits;
+
+        fruits.pop();
+        document.getElementById("arr2").innerHTML= "fruits.pop() : " + fruits;
+
+        fruits.push("Kiwi");
+        document.getElementById("arr3").innerHTML= "fruits.push('Kiwi') : " + fruits;
+
+        fruits.shift();
+        document.getElementById("arr4").innerHTML= "fruits.shift() : " + fruits;
+        
+        delete fruits[0];
+        document.getElementById("arr5").innerHTML= " delete fruits[0] : " + fruits;
+    </script>
+</body>
+</html>

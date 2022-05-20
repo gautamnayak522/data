@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day4 Pr3</title>
+</head>
+
+<body>
+    <label>Enter String</label>
+    <input type="text" id="str"><br>
+    <button type="button" onclick="setTimeout(check,5000);">Click</button>
+    <div id="result"></div>
+
+    <script>
+        function check() {
+            st = document.getElementById("str").value;
+            p(st);
+        }
+        function p(value) {
+            let mypromise = new Promise(function (resolve, reject) {
+                if (isNaN(value)) {
+                    var reverse = "";
+                    for (i = value.length - 1; i >= 0; i--) {
+                        reverse += value[i];
+                    }
+                    resolve(reverse);
+                } else {
+                    reject("Invaid input");
+                }
+            })
+            mypromise.then(
+                function (resolve) {
+                    document.getElementById("result").innerHTML = "Reverse String: " + resolve;
+                },
+                function (reject) {
+                    document.getElementById("result").innerHTML = reject;
+                }
+            )
+        }
+    </script>
+</body>
+
+</html>

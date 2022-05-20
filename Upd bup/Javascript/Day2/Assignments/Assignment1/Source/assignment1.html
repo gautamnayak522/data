@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day2 Assi1</title>
+    <link href="../../../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <h3>Date entered by the user should be checked for whether it is a Valid Date or not.</h3>
+
+    <form class="p-5 text-center">
+        <label for="name">Enter Date</label>
+        <input type="text" id="dt" placeholder="MM-DD-YYYY"><br/>
+        <span class="text-muted">Date Format : MM-DD-YYYY</span>
+        <br/> <br/>
+        <button class="bg-secondary" type="button" onclick="checkDate()">Submit</button>
+
+        <p id="date" style="display: block;"></p>
+        
+    </form>
+    <script>
+        function checkDate(){
+            var DATE=document.getElementById("dt").value;
+            const dateArray = DATE.split("-");
+    
+            var mm = parseInt(dateArray[0]);
+            var dd = parseInt(dateArray[1]);
+            var yyyy = parseInt(dateArray[2]);
+            b=false;
+           
+            if(DATE.length==10)
+            {   
+                if(mm==2){
+                    if(dd>0 && dd<=28)
+                    {
+                        if(yyyy>1800)
+                        {   
+                            alert("Date is Valid");
+                            document.getElementById("date").innerHTML="VALID DATE : " + DATE;
+                         }
+                         else{
+                            alert("Enter Correct Date");
+                            document.getElementById("date").innerHTML="INVALID DATE : " + DATE;
+                        }
+                    }
+                    else{
+                        alert("Enter Correct Date");
+                        document.getElementById("date").innerHTML="INVALID DATE : " + DATE;
+                    }
+                }
+                else{
+                    if(mm > 0 && mm <= 12){
+                        if(dd>0 && dd<=31)
+                          {
+                          if(yyyy>1800)
+                             {   
+                            alert("Date is Valid");
+                            document.getElementById("date").innerHTML="VALID DATE : " + DATE;
+                            }
+                            else{
+                            alert("Enter Correct Date");
+                            document.getElementById("date").innerHTML="INVALID DATE : " + DATE;
+                            }
+                        }
+                         else{
+                        alert("Enter Correct Date");
+                        document.getElementById("date").innerHTML="INVALID DATE : " + DATE;
+                        }
+                    }
+                
+                     else{
+                    alert("Enter Correct Date");
+                    document.getElementById("date").innerHTML="INVALID DATE : " + DATE;
+                     } 
+                    }
+                }
+              else{
+                alert("Enter Correct Datee");
+                document.getElementById("date").innerHTML="INVALID DATE : " + DATE;
+                }
+             }
+    </script>
+    
+</body>
+</html>

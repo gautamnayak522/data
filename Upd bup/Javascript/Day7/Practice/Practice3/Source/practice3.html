@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h2>Destructuring Object</h2>
+<p>result in console</p>
+<script>
+
+    const profile={
+        firstName:"ABC",
+        lastName:"XYZ",
+        age:21,
+        city:"ahmedabad",
+        siblings:{
+            sister:"PQR",
+            brother:"MNO",
+        },
+    }
+   console.log(profile);
+   console.log(profile.firstName);
+
+   const{firstName,lastName,age,city,siblings:{sister:fvs,brother}}=profile;
+
+   console.log(firstName,lastName,age,city,fvs,brother);
+
+</script>
+</body>
+</html>

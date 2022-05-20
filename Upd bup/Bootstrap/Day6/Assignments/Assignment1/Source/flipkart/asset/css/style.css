@@ -1,0 +1,205 @@
+header{
+    display: flex;
+    background-color: #2874f0;
+    width: 100%;
+    height: 56px;
+   
+}
+.header-left{
+    width: 20%;
+    text-align: right;
+}
+.header-left a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-style: italic;
+}
+.header-left-p{
+   font-size: 10px;
+   color: white;
+}
+.header-left-p span{
+    color: yellow;
+}
+.header-left-p:hover{
+    text-decoration: underline;
+}
+.header-center{
+    width: 40%;
+    text-align: left;
+    line-height: 50px;
+    padding-left: 20px;
+    position: relative;
+}
+.header-center-input{
+    height: 36px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    padding-left: 20px;
+}
+.fa-search{
+    position: absolute;
+    top: 30%;
+    left: 94%;
+    font-size: 18px;
+    color: #2874f0;
+}
+.header-right{
+    width: 40%;
+    font-size: 15px;
+    display: flex;
+    justify-content: flex-start;
+    text-transform: capitalize;
+    line-height: 50px;
+    margin-left: 100px;
+}
+
+.header-right .active{
+    background-color: white;
+    color: #2874f0;
+    padding: 5px 30px;
+    height: 35px;
+    width: 130px;
+    line-height: 23px;
+    margin-top: 8px;
+    border-radius: 2px;
+    text-align: center;
+}
+#categories .col img{
+    width:70px;
+    height: 70px;
+    margin-top: 10px;
+}
+#categories .col h6:hover{
+    color: blue;
+}
+#categories .container-fluid{
+    background-color: #f1f3f6;
+}
+
+#dealsoftheday .col{
+    text-align: center;
+}
+#dealsoftheday .col img:hover{
+    transform: scale(0.9);
+}
+#dealsoftheday .col a{
+    text-decoration: none;
+}
+#dealsoftheday .col h5{
+    color: black;
+}
+
+#dealsoftheday .col img{
+    width: 120px;
+    height: 120px;
+}
+#dealsoftheday .container-fluid{
+    background-color: #f1f3f6;
+}
+
+#topdeals .col img{
+    width: 120px;
+    height: 120px;
+}
+
+#topdeals .col{
+    text-align: center;
+}
+#topdeals .col img:hover{
+    transform: scale(0.9);
+}
+#topdeals .col a{
+    text-decoration: none;
+}
+#topdeals .col h5{
+    color: black;
+}
+#topdeals .container-fluid{
+    background-color: #f1f3f6;
+}
+
+#fnbestseller .col{
+    text-align: center;
+}
+#fnbestseller .col img:hover{
+    transform: scale(0.9);
+}
+#fnbestseller .col a{
+    text-decoration: none;
+}
+#fnbestseller .col h5{
+    color: black;
+}
+
+#fnbestseller .col img{
+    width: 120px;
+    height: 120px;
+}
+#fnbestseller .container-fluid{
+    background-color: #f1f3f6;
+}
+
+#assesories .col{
+    text-align: center;
+}
+#assesories .col img:hover{
+    transform: scale(0.9);
+}
+#assesories .col a{
+    text-decoration: none;
+}
+#assesories .col h5{
+    color: black;
+}
+
+#assesories .col img{
+    width: 120px;
+    height: 120px;
+}
+#assesories .container-fluid{
+    background-color: #f1f3f6;
+}
+
+
+#details .container-fluid{
+    background-color:#f1f3f6;
+    font-size: 15px;
+
+}
+
+
+footer{
+    background-color:#172337;
+    padding: 20px;
+    margin-top:10px;
+    color: white;
+
+}
+.footer-heading{
+    color: #878787;
+    font-size: 14px;
+    font-weight: 400;
+}
+.footer-list span
+{
+   color: blue;
+}
+.footer-list a
+{
+    text-decoration: none;
+    color: white;
+}
+.footer-list a:hover
+{
+    text-decoration: underline;
+}
+.fa-shopping-bag, .fa-star, .fa-gift ,.fa-question-circle{
+    color: #ffd700;
+    cursor: pointer;
+   padding-right: 10px;
+   
+}

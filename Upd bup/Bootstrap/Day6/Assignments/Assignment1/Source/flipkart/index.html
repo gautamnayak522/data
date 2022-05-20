@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart</title>
+    <link href="../../../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../../node_modules/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="asset/css/style.css">
+</head>
+<body>
+    <header class="sticky-top">
+        <div class="header-left">
+            <a href="#">Flipkart</a>
+            
+            <div class="header-left-p">
+                <p>Explore <span>Plus <span class="fa fa-plus"></span></span></p>
+            </div>
+         </div>
+            
+         <div class="header-center">
+             <input class="header-center-input" type="text" placeholder=" Search for products,Brands and more"><span class="fa fa-search"></span>
+        </div>
+
+        <div class="header-right">
+            <a class="active mx-5 text-decoration-none" href="#">Login</a>
+
+            <div class="dropdown mx-5 text-white">
+                <a id="ddmore" data-bs-toggle="dropdown" class="text-white"> more <span class="fa fa-sort-down"></span></a>
+                <ul class="dropdown-menu" aria-labelledby="ddmore">
+                    <li><a class="dropdown-item" href="#">Sell on flipkart</a></li>
+                    <li><a class="dropdown-item" href="#">24*7 customer care</a></li>
+                    <li><a class="dropdown-item" href="#">Download app</a></li>
+                </ul>
+            </div>
+
+          
+          <a href="#" class="text-white mx-5 text-decoration-none"><span class="fa fa-shopping-cart"></span> cart</a>
+        </div>
+          
+   </header>
+    <section id="categories">
+        <div class="container-fluid">
+            <div class="row mt-3 px-3 mx-5">
+                <div class="col">
+                    <img src="asset/img/top-offers.png" alt="topoffres">
+                    <h6>Top Offres</h6>
+                </div>
+                <div class="col">
+                    <img src="asset/img/grocery.png" alt="topoffres">
+                    <h6>Grocery</h6>
+                </div>
+                <div class="col">
+                    <img src="asset/img/mobiles.png" alt="topoffres">
+                    <h6>Mobile</h6>
+                </div>
+                <div class="col">
+                    <img src="asset/img/fashion.png" alt="topoffres">
+                    <h6>Fashion</h6>
+                </div>
+                <div class="col">
+                    <img src="asset/img/electronics.png" alt="topoffres">
+                    <h6>Electronics</h6>
+                </div>
+                <div class="col">
+                    <img src="asset/img/home.jpg" alt="topoffres">
+                    <h6>Home</h6>
+                </div>
+                <div class="col">
+                    <img src="asset/img/appliances.png" alt="topoffres">
+                    <h6>Appliances</h6>
+                </div>
+                <div class="col">
+                    <img src="asset/img/travel.png" alt="topoffres">
+                    <h6>Travel</h6>
+                </div>
+                <div class="col">
+                    <img src="asset/img/Beauty, Toys & More.png" alt="topoffres">
+                    <h6>Beauty, Toys & More</h6>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="carousel">
+        <div id="cl1" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="2500">
+                <img src="asset/img/slide1.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="2500">
+                <img src="asset/img/slide2.jpeg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="2500">
+                <img src="asset/img/slide3.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="2500">
+                <img src="asset/img/slide4.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#cl1" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#cl1" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+    </section>
+
+    <section id="dealsoftheday">
+        <div class="container-fluid mt-3">
+            <div class="row mx-5 mt-3">
+                <div class="col-6">
+                     <span class="h3">Deals of the day </span>
+                     <span class="fa fa-clock-o text-muted" id="demo"> </span>
+                 </div>
+                 <div class="col-6">
+                    <button class="btn btn-primary text-white px-4 py-2 float-end">View all</button>
+                 </div>
+            </div>
+
+            <div class="row mt-3 mx-5">
+
+                        <div class="col"> 
+                            <a href="">
+                            <img src="asset/img/d1.jpeg" alt="">
+                            <h5>Girl's Dresses</h5>
+                            <h6 class="text-success">Min. 60% off</h6>
+                            <h6 class="text-muted">Hurry, Dont Miss Out</h6>
+                            </a>
+                        </div>
+                        <div class="col"> 
+                            <a href="">
+                            <img src="asset/img/d2.jpg" alt="">
+                            <h5>Gas Stoves</h5>
+                            <h6 class="text-success">From <span class="fa fa-rupee"></span>1499</h6>
+                            <h6 class="text-muted">Hurry, Dont Miss Out</h6>
+                            </a>
+                        </div>
+                        <div class="col"> 
+                            <a href="">
+                            <img src="asset/img/d3.jpeg" alt="">
+                            <h5>ADIDAS shoes</h5>
+                            <h6 class="text-success">Min. 60% off</h6>
+                            <h6 class="text-muted">Hurry, Dont Miss Out</h6>
+                            </a>
+                        </div>
+                        <div class="col"> 
+                            <a href="">
+                            <img src="asset/img/d4.jpg" alt="">
+                            <h5>Bike Assesories</h5>
+                            <h6 class="text-success">From <span class="fa fa-rupee"></span>49</h6>
+                            <h6 class="text-muted">Top selling</h6>
+                            </a>
+                        </div>4 
+                        <div class="col"> 
+                            <a href="">
+                            <img src="asset/img/d5.jpeg" alt="">
+                            <h5>Ayurveda</h5>
+                            <h6 class="text-success">Upto 70% off</h6>
+                            <h6 class="text-muted">Hurry, Dont Miss Out</h6>
+                            </a>
+                        </div>
+                        <div class="col"> 
+                            <a href="">
+                            <img src="asset/img/d6.jpeg" alt="">
+                            <h5>Jewellery</h5>
+                            <h6 class="text-success">Under <span class="fa fa-rupee"></span>499</h6>
+                            <h6 class="text-muted">Hurry, Dont Miss Out</h6>
+                            </a>
+                        </div>
+                        <div class="col"> 
+                            <a href="">
+                            <img src="asset/img/d7.jpeg" alt="">
+                            <h5>Smartwatches</h5>
+                            <h6 class="text-success">Min. 60% off</h6>
+                            <h6 class="text-muted">just <span class="fa fa-rupee"></span>1899</h6>
+                            </a>
+                        </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section id="topdeals">
+        <div class="container-fluid mt-3">
+           <div class="row ms-5">
+            <div class="col-9">
+                <div class="row mt-3">
+                    <div class="col-6">
+                        <span class="h3">Top Deals on Fashion</span>
+                    </div>
+                    <div class="col-6">
+                        <button class="btn btn-primary text-white px-4 py-2 float-end">View all</button>
+                    </div>
+                    
+                </div>
+
+                 <div class="row mt-3"> 
+                        <div class="col"> 
+                            <a href="">
+                            <img src="asset/img/tp1.jpeg" alt="">
+                            <h5>ADIDAS</h5>
+                            <h6 class="text-success">Min. 40% off</h6>
+                            <h6 class="text-muted">Casual, sneakers</h6>
+                            </a>
+                        </div>
+                        <div class="col"> 
+                            <a href="">
+                            <img src="asset/img/tp2.jpeg" alt="">
+                            <h5>PUMA</h5>
+                            <h6 class="text-success">From <span class="fa fa-rupee"></span>1499</h6>
+                            <h6 class="text-muted">Sports shoes</h6>
+                            </a>
+                        </div>
+                        <div class="col"> 
+                            <a href="">
+                            <img src="asset/img/tp3.jpeg" alt="">
+                            <h5>NIKE</h5>
+                            <h6 class="text-success">Min. 20% off</h6>
+                            <h6 class="text-muted">Best Seller</h6>
+                            </a>
+                        </div>
+                        <div class="col"> 
+                            <a href="">
+                            <img src="asset/img/tp4.jpeg" alt="">
+                            <h5>Cool Cargos</h5>
+                            <h6 class="text-success">From <span class="fa fa-rupee"></span>399</h6>
+                            <h6 class="text-muted">Grab and Gone</h6>
+                            </a>
+                        </div>
+                        <div class="col"> 
+                            <a href="">
+                            <img src="asset/img/tp5.jpeg" alt="">
+                            <h5>Baby Clothes</h5>
+                            <h6 class="text-success">Best Offers</h6>
+                            <h6 class="text-muted">Great Savings</h6>
+                            </a>
+                        </div>
+                        <div class="col"> 
+                            <a href="">
+                            <img src="asset/img/tp6.jpeg" alt="">
+                            <h5>Sarees</h5>
+                            <h6 class="text-success">from <span class="fa fa-rupee"></span>1499</h6>
+                            <h6 class="text-muted">Explore Now</h6>
+                            </a>
+                        </div>
+                 </div>
+             </div>
+
+                 <div class="col-3">
+                     <a href="">
+                    <img src="asset/img/add1.jpg" alt="" height="300px" width="300px">
+                    </a>
+                 </div>
+                 </div>
+        </div>
+    </section>
+    
+    <section id="mobileadd">
+        <div class="container-fluid mt-3">
+            <div class="row">
+                <div class="col">
+                    <a href=""> <img src="asset/img/mb1.jpg" alt="" height="300px" width="100%"> </a>
+                </div>
+                <div class="col">
+                    <a href=""> <img src="asset/img/mb2.jpg" alt="" height="300px" width="100%"> </a>
+                </div>
+                <div class="col">
+                    <a href=""> <img src="asset/img/mb3.jpg" alt="" height="300px" width="100%"> </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="fnbestseller">
+        <div class="container-fluid mt-3">
+           
+            <div class="row mx-5 mt-3">
+                <div class="col-6 mt-3">
+                     <span class="h3">Furniture Bestsellers </span>
+                     <p class="text-muted">Up to 70% OFF</p>
+                 </div>
+                 <div class="col-6 mt-3">
+                    <button class="btn btn-primary text-white float-end">View all</button>
+                 </div>
+            </div>
+
+            <div class="row mx-5">
+                        <div class="col"> 
+                            <a href="">
+                            <img src="asset/img/fn1.jpeg" alt="">
+                            <h5>Furniture Accessories</h5>
+                            <h6 class="text-success">Upto 70% off</h6>
+                            <h6 class="text-muted">Bunk Beds, Benches</h6>
+                            </a>
+                        </div>
+                        <div class="col"> 
+                            <a href="">
+                            <img src="asset/img/fn2.jpeg" alt="">
+                            <h5>Hammock And Swings</h5>
+                            <h6 class="text-success">From <span class="fa fa-rupee"></span>199</h6>
+                            <h6 class="text-muted">Trendy Collection</h6>
+                            </a>
+                        </div>
+                        <div class="col"> 
+                            <a href="">
+                            <img src="asset/img/fn3.jpeg" alt="">
+                            <h5>Bean Bag Covers</h5>
+                            <h6 class="text-success">Min. 80% off</h6>
+                            <h6 class="text-muted">XL, XXL & More</h6>
+                            </a>
+                        </div>
+                        <div class="col"> 
+                            <a href="">
+                            <img src="asset/img/fn4.jpeg" alt="">
+                            <h5>Inflatable sofa</h5>
+                            <h6 class="text-success">From <span class="fa fa-rupee"></span> 1169</h6>
+                            <h6 class="text-muted">Hurry, Dont Miss Out</h6>
+                            </a>
+                        </div>
+                        <div class="col"> 
+                            <a href="">
+                            <img src="asset/img/fn5.jpeg" alt="">
+                            <h5>Office & Study Chairs</h5>
+                            <h6 class="text-success">Min. 50% off</h6>
+                            <h6 class="text-muted">Fabric & Leatherette</h6>
+                            </a>
+                        </div>
+                        <div class="col"> 
+                            <a href="">
+                            <img src="asset/img/fn6.jpeg" alt="">
+                            <h5>SofaSets</h5>
+                            <h6 class="text-success">Min. 60% off</h6>
+                            <h6 class="text-muted">just <span class="fa fa-rupee"></span>4500</h6>
+                            </a>
+                        </div>
+                        <div class="col"> 
+                            <a href="">
+                            <img src="asset/img/fn8.jpeg" alt="">
+                            <h5>TV Units</h5>
+                            <h6 class="text-success">From <span class="fa fa-rupee"></span>2100</h6>
+                            <h6 class="text-muted">Forzaa & More</h6>
+                            </a>
+                        </div>
+                        <div class="col"> 
+                            <a href="">
+                            <img src="asset/img/fn9.jpeg" alt="">
+                            <h5>Study tables</h5>
+                            <h6 class="text-success">Min. 50% off</h6>
+                            <h6 class="text-muted">Trendy Collection</h6>
+                            </a>
+                        </div>
+                       
+                    </div>
+      </div>
+    </section>
+
+    <section id="assesories">
+        <div class="container-fluid mt-3">
+           
+            <div class="row mx-5 mt-3">
+                <div class="col-6 mt-3">
+                     <span class="h3">Top Deals on Accessories </span>
+                 </div>
+                 <div class="col mt-3">
+                    <button class="btn btn-primary text-white float-end">View all</button>
+                 </div>
+            </div>
+
+            <div class="row mx-5 mt-3">
+                        <div class="col"> 
+                            <a href="">
+                            <img src="asset/img/as1.jpeg" alt="">
+                            <h5>Glass Cases</h5>
+                            <h6 class="text-success">Shop Now</h6>
+                            <h6 class="text-muted">For all phone Models</h6>
+                            </a>
+                        </div>
+                        <div class="col"> 
+                            <a href="">
+                            <img src="asset/img/as2.jpeg" alt="">
+                            <h5>Laptop Skin Decals</h5>
+                            <h6 class="text-success">Upto 80% off</h6>
+                            <h6 class="text-muted">FlipkartSmartBuy & More</h6>
+                            </a>
+                        </div>
+                        <div class="col"> 
+                            <a href="">
+                            <img src="asset/img/as3.jpeg" alt="">
+                            <h5>Multi-access Gimbals</h5>
+                            <h6 class="text-success">From <span class="fa fa-rupee"></span>5499</h6>
+                            <h6 class="text-muted">Kodak, Digitek</h6>
+                            </a>
+                        </div>
+                        <div class="col"> 
+                            <a href="">
+                            <img src="asset/img/as4.jpeg" alt="">
+                            <h5>Mobile Holders</h5>
+                            <h6 class="text-success">From <span class="fa fa-rupee"></span> 99</h6>
+                            <h6 class="text-muted">Relax your hands while holding</h6>
+                            </a>
+                        </div>
+                        <div class="col"> 
+                            <a href="">
+                            <img src="asset/img/as5.jpeg" alt="">
+                            <h5>WebCams</h5>
+                            <h6 class="text-success">Min. 50% off</h6>
+                            <h6 class="text-muted">Logitech, Quantum</h6>
+                            </a>
+                        </div>
+                        <div class="col"> 
+                            <a href="">
+                            <img src="asset/img/as6.jpeg" alt="">
+                            <h5>DataCards</h5>
+                            <h6 class="text-success">Upto 60% off</h6>
+                            <h6 class="text-muted">jioFi and more</h6>
+                            </a>
+                        </div>
+                        <div class="col"> 
+                            <a href="">
+                            <img src="asset/img/as7.jpeg" alt="">
+                            <h5>Keyboard Skins</h5>
+                            <h6 class="text-success">Upto 70% off</h6>
+                            <h6 class="text-muted">flipkart smartbuy & More</h6>
+                            </a>
+                        </div>
+                        <div class="col"> 
+                            <a href="">
+                            <img src="asset/img/as8.jpeg" alt="">
+                            <h5>Routers</h5>
+                            <h6 class="text-success">From <span class="fa fa-rupee"></span>799</h6>
+                            <h6 class="text-muted">MI, TP-links & more</h6>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+    </section>
+
+
+    <section id="details">
+        <div class="container-fluid mt-3">
+            <div class="row">
+                <div class="col">
+                    <p><span class="text-muted">Top Stories</span> : Brand Directory</p>
+                    <p><span class="text-muted">MOST SEARCHED FOR ON FLIPKART</span>:OPPO A16K | Vivo Y33T | OPPO Reno7 5G | OPPO Reno7 Pro 5G | iPhone 13 | iPhone 13 Pro | iPhone 13 Pro Max | iPhone 13 Mini | Flipkart QuickBooks | Flipkart Help Centre | Flipkart Track Orders | Flipkart Manage Orders | Flipkart Return Orders | Flipkart Gift Cards Store | Flipkart Axis Bank Credit Card | Flipkart Pay Later</p>
+                    <p><span class="text-muted">MOBILES</span> :iPhone 12 64GB | iPhone 12 Pro 512GB | iPhone 12 128GB | Vivo Y91i | Vivo Y11 | Vivo Y15 | Vivo Y50 | Vivo Y12 | Reno2 F | Oppo A12 | Oppo F15 | Oppo A31 | Samsung A71 | Samsung A51 | Samsung A31 | Realme X2 | iPhone 11 | iPhone 11 Pro | iPhone 11 Pro Max | Mobile Offers | iphone x | 4G Mobile | Nokia Mobile | Samsung Mobile | iphone | Oppo Mobile | Vivo Mobile</p>
+                    <p><span class="text-muted">CAMERA </span>:GoPro Action Camera | Nikon Camera | Canon Camera | Sony Camera | Canon DSLR | Nikon DSLR</p>
+                    <p><span class="text-muted">LAPTOPS </span>:Microsoft Surface Go Pentium Gold 64GB | Microsoft Surface Go Pentium 128GB | Branded Laptops | Apple Laptops | Acer Laptops | Lenovo Laptops | Dell Laptops | Asus Laptops | HP Laptops | Gaming Laptops | 2 in 1 Laptops | Business Laptops</p>
+                    <br/>
+                    <p class="text-muted">Flipkart: The One-stop Shopping Destination</p>
+                    <p class="small">E-commerce is revolutionizing the way we all shop in India. Why do you want to hop from one store to another in search of the latest phone when you can find it on the Internet in a single click? Not only mobiles. Flipkart houses everything you can possibly imagine, from trending electronics like laptops, tablets, smartphones, and mobile accessories to in-vogue fashion staples like shoes, clothing and lifestyle accessories; from modern furniture like sofa sets, dining tables, and wardrobes to appliances that make your life easy like washing machines, TVs, ACs, mixer grinder juicers and other time-saving kitchen and small appliances; from home furnishings like cushion covers, mattresses and bedsheets to toys and musical instruments, we got them all covered. You name it, and you can stay assured about finding them all here. For those of you with erratic working hours, Flipkart is your best bet. Shop in your PJs, at night or in the wee hours of the morning. This e-commerce never shuts down.</p>
+                    <p class="small">What's more, with our year-round shopping festivals and events, our prices are irresistible. We're sure you'll find yourself picking up more than what you had in mind. If you are wondering why you should shop from Flipkart when there are multiple options available to you, well, the below will answer your question.</p>
+                    <p class="text-muted">No Cost EMI</p>
+                    <p class="small">In an attempt to make high-end products accessible to all, our No Cost EMI plan enables you to shop with us under EMI, without shelling out any processing fee. Applicable on select mobiles, laptops, large and small appliances, furniture, electronics and watches, you can now shop without burning a hole in your pocket. If you've been eyeing a product for a long time, chances are it may be up for a no cost EMI. Take a look ASAP! Terms and conditions apply.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container-fluid">
+            <div class="row mx-auto">
+                <div class="col">
+                    <div class="footer-heading">
+                        <p>ABOUT</p>
+                   </div>
+                   <div class="footer-list d-flex flex-column">
+                       <a href="#">Contact Us</a>
+                       <a href="#">About Us</a>
+                       <a href="#">Careers</a>
+                       <a href="#">Flipkart Stories</a>
+                       <a href="#">Press</a>
+                       <a href="#">Flipkart Wholesale</a>
+                       <a href="#">Corporate information</a>
+                   </div>
+                    
+                </div>
+                <div class="col">
+                    <div class="footer-heading">
+                        <p>HELP</p>
+                   </div>
+                   <div class="footer-list d-flex flex-column">
+                       <a href="#">Payments</a>
+                       <a href="#">Shipping</a>
+                       <a href="#">Cancellation & Returns</a>
+                       <a href="#">FAQ</a>
+                       <a href="#">Report Infringement</a> 
+                   </div>
+                </div>
+                <div class="col">
+                    <div class="footer-heading">
+                        <p>POLICY</p>
+                   </div>
+                   <div class="footer-list d-flex flex-column">
+                       <a href="#">Return Policy</a>
+                       <a href="#">Terms Of Use</a>
+                       <a href="#">Security</a>
+                       <a href="#">Privacy</a>
+                       <a href="#">Sitemap</a>
+                       <a href="#">EPR Compliance</a>
+                   </div>
+                </div>
+                <div class="col">
+                    <div class="footer-heading">
+                        <p>SOCIAL</p>
+                   </div>
+                   <div class="footer-list d-flex flex-column">
+                       <a href="#">Facebook</a>
+                       <a href="#">Twitter</a>
+                       <a href="#">YouTube</a>  
+                   </div>
+                </div>
+                <div class="col">
+                    <div class="footer-heading">
+                        <p>Mail Us</p>
+                   </div>
+                   <div class="footer-list ">
+                        <p>Flipkart Internet Private Limited,
+                           Buildings Alyssa, Begonia &
+                           Clove Embassy Tech Village,
+                           Outer Ring Road, Devarabeesanahalli Village,
+                           Bengaluru, 560103,
+                           Karnataka, India</p>
+                     </div>
+                </div>
+                <div class="col">
+                    <div class="footer-heading">
+                        <p>Registered Office Address</p>
+                   </div>
+                   <div class="footer-list">
+                    <p>
+                        Flipkart Internet Private Limited,
+                        Buildings Alyssa, Begonia &
+                        Clove Embassy Tech Village,
+                        Outer Ring Road, Devarabeesanahalli Village,
+                        Bengaluru, 560103,
+                        Karnataka, India
+                        CIN : U51109KA2012PTC066107
+                        Telephone: <span>1800 202 9898</span>
+                    </p>
+                      
+                   </div>
+                </div>
+            </div>
+            <hr/>
+            <div class="row mt-3 text-center">
+                
+                <div class="col">
+                    <span class="fa fa-shopping-bag"></span> Sell On Flipkart
+                </div>
+                <div class="col">
+                    <span class="fa fa-star"></span> Advertise
+                </div>
+                <div class="col">
+                    <span class="fa fa-gift"></span> Gift-cards
+                </div>
+                <div class="col">
+                    <span class="fa fa-question-circle"></span> Help Center
+                </div>
+                <div class="col">
+                    &copy; 2007-2022 Flipkart.com
+                </div>
+                <div class="col"><img src="asset/img/footer.png" alt="">
+                </div>
+            </div>
+            
+        </div>
+    </footer>
+
+
+    
+    <script src="../../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+       
+        var countDownDate = new Date("Feb 28, 2022 12:00:00").getTime();
+
+        var x = setInterval(function() {
+
+          var now = new Date().getTime();
+            
+          var distance = countDownDate - now;
+            
+          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            
+          document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+          + minutes + "m " + seconds + "s ";
+    
+          if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("demo").innerHTML = "EXPIRED";
+          }
+        }, 1000);
+        </script>
+</body>
+</html>

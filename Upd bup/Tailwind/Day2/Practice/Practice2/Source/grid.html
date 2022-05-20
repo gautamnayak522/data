@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../../dist/output.css" rel="stylesheet">
+    <title>Grid tailwind</title>
+</head>
+<body>
+    Grid Template Columns
+
+    <div class="grid grid-cols-4 gap-4">
+        <div>01</div>
+        <div>02</div>
+        <div>03</div>
+        <div>04</div>
+        <div>05</div>
+        <div>06</div>
+        <div>07</div>
+        <div>08</div>
+        <div>09</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+      </div>
+
+      Grid Column Start / End
+      <div class="grid grid-cols-3 gap-4">
+        <div class="bg-blue-500">01</div>
+        <div class="bg-blue-500">02</div>
+        <div class="bg-blue-500">03</div>
+        <div class="col-span-2 bg-blue-500">04</div>
+        <div class="bg-blue-500">05</div>
+        <div class="bg-blue-500">06</div>
+        <div class="col-span-2 bg-blue-500">07</div>
+      </div>
+      <br/>
+      
+      Grid Template Rows
+      <div class="grid grid-rows-4 grid-flow-col gap-x-8 gap-y-12">
+        <div class="bg-red-400">01</div>
+        <div class="bg-red-400">02</div>
+        <div class="bg-red-400">03</div>
+        <div class="bg-red-400">04</div>
+        <div class="bg-red-400">05</div>
+        <div class="bg-red-400">06</div>
+        <div class="bg-red-400">07</div>
+        <div class="bg-red-400">08</div>
+        <div class="bg-red-400">09</div>
+        <div class="bg-red-400">10</div>
+      </div>
+      
+      <br/>
+      Grid Row Start / End
+      <div class="grid grid-rows-3 grid-flow-col gap-4">
+        <div class="row-span-3 bg-slate-300">01</div>
+        <div class="col-span-2 bg-slate-400">02</div>
+        <div class="row-span-2 col-span-2 bg-slate-500">03</div>
+      </div>
+
+  >
+
+</body>
+</html>

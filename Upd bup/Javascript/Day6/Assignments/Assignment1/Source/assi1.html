@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container pt-5">
+        <table class="table" id="tbl">
+            <caption>Table of Products</caption>
+            <tr>
+                <th>ProductId</th>
+                <th>ProductName</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th></th>
+            </tr>
+        </table>
+        <button class="w-100" onclick="showcart()">Cart Summary</button>
+        <p id="result" class="mt-5 text-center"></p>
+    </div>
+
+    <script>
+        var myarray = [
+            { "Id": 1, "Name": "Cheese", "Price": 100, "Quantity": 1 },
+            { "Id": 2, "Name": "Pen", "Price": 150, "Quantity": 2 },
+            { "Id": 3, "Name": "Butter", "Price": 100, "Quantity": 1 },
+            { "Id": 4, "Name": "Pencil", "Price": 10, "Quantity": 1 },
+        ]
+
+        createtable(myarray)
+
+        function createtable(data) {
+            var table = document.getElementById("tbl")
+            for (var i = 0; i < data.length; i++) {
+                var row = `
+                   <tr>
+                    <td>${data[i].Id}</td>
+                   <td>${data[i].Name}</td>
+                   <td>${data[i].Price}</td>
+                   <td>${data[i].Quantity}</td>
+                   <td><button class="btn-success" onClick="add()">add to cart</button></td>
+                   </tr>
+                   `
+                table.innerHTML += row
+            }
+        }
+
+        function add() {
+            var table = document.getElementById('tbl');
+            var cells = table.getElementsByTagName('td');
+            for (var i = 0; i < cells.length; i++) {
+                
+                var cell = cells[i];
+
+                cell.onclick = function () {
+
+                   var rowId = this.parentNode.rowIndex;
+                    //alert(rowId);
+                    var rowsNotSelected = table.getElementsByTagName('tr');
+                    var rowSelected = table.getElementsByTagName('tr')[rowId];
+
+                    msg = rowSelected.cells[0].innerHTML+" ";
+                    msg += rowSelected.cells[1].innerHTML+" ";
+                    msg += rowSelected.cells[2].innerHTML+" ";
+                    msg += rowSelected.cells[3].innerHTML;
+                    var m = JSON.stringify(msg)
+                    alert("data successfully added to cart")
+                    localStorage.setItem("name", m);
+                    
+                }
+            }
+        }
+        function showcart() {
+            document.getElementById("result").innerHTML = localStorage.getItem("name");
+            console.log(localStorage.getItem("name"));
+        }
+    </script>
+</body>
+
+</html>

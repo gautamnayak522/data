@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day5 Pr2</title>
+</head>
+
+<body>
+    <h2>Using Function Expression, find the area of rectangle</h2>
+    <p id="check"></p>
+
+    <script>
+        var l = prompt("enter length");
+        var w = prompt("enter width");
+        const f = new Function("l", "b", "return l*b");
+        document.getElementById("check").innerHTML = "Area of rectangle with length " + l + " and width " + w + " is = " + f(l, w);
+    </script>
+</body>
+
+</html>

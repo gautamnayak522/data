@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day5 pr5</title>
+</head>
+
+<body>
+    <form action="">
+        <h2>Using Function Apply pass employee object to a function defined in the function.</h2>
+        <p id="check"></p>
+    </form>
+    <script>
+        const myObject = {
+          fullDetails: function(contact,city) {
+            return this.name + ", " + this.emp_no + ", " + city + ", " + contact;
+          }
+        }
+        var object1={
+            name:"GAUTAM",
+            emp_no:"2469"
+        }
+        document.getElementById("check").innerHTML = myObject.fullDetails.apply(object1,["9999999999","PBR"]);
+        </script>
+        
+</body>
+
+</html>

@@ -1,0 +1,463 @@
+Training Start : 1st feb 2022
+
+day 1  1-feb
+GIT-SVN-DAY1
+commit,push,pull     https://github.com/gautamnayak522/practice.git
+fork,pull request      https://github.com/gautamnayak522/practice-1.git
+6 flowcharts
+
+day 2 2-feb 
+GIT-SVN-DAY2
+stage, stash, resolve conflicts      https://github.com/gautamnayak522/LearnningGIT.git
+6 flowcharts of pattern 
+
+Day 3 3-feb
+GIT-SVN-DAY3
+-creating branch(main to development,development to test)
+-merge branch 
+-reverese merge
+-conflicts resolve while merging
+- creating pull request for merge,revew,compare and merge code.
+
+1>5students data should be store in array(ID,Name,Address) and display data value
+2>sort using bubble sort based based on its employeeid
+3>sort using merge sort based on its employeeid
+4>sort using selection s  ort based on its employee id
+5>sort using quick sort based on its employee id
+6>sort using stack based on its employee id
+
+https://apitutorial.dev.radixweb.net/course/
+
+cat README.md
+git rebase -i HEAD~2
+    replace edit with pick, on which line you want to make changes
+vi file.txt
+    make required changes
+git add file.txt
+git rebase --continue
+vi file.txt (see all are upadted or not?)
+git add file.txt
+git verify
+
+Day 4 4-feb
+GIT-SVN-DAY4
+cherry-pick try
+make change and commit again
+
+https://github.com/gautamnayak522/GITexercises.git
+
+Tasks:
+Self learning 
+GIT
+    Cherry Pick
+    Rebase
+SVN
+    Import the repository
+    Checkout the repository
+    Commit/update
+    Resolving conflict(merge)
+    adding to ignore list
+
+***
+
+Day 5 7-feb
+GIT-SVN-DAY5
+Ending the day
+Tasks Done
+#1 GIT Exercises #2 GIT Revesion #3 SVN Revision #4 Tutorial videos from training site
+
+----------------------------------------------------------------------------------------------------------
+
+Day 6 8-feb
+HTML DAY1
+Ending the Day
+Learn HTML Concepts
+Module 1 Practice exercise : Completed
+Module 1 Assignment : Completed
+
+Day 6 ,HTML, Module1
+HTML Concepts(HTML5,TABLE,LIST,FORM,VALIDATION,BASIC HTML TAGS/ATTRIBUTES)
+Module 1 Practice exercise 
+Module 1 Assignment
+
+Day 7 9-feb
+HTML DAY2
+HTML Module2
+http://localhost:3000/
+audio element
+video element
+assi1
+
+Ending the day
+HTML Module2 Practice(media Tags)
+HTML Module2 Assignment
+-vitejs
+SonarQube Bug Solve
+
+----------------------------------------------------------------------------------------------------------
+
+Day8 10-feb
+CSS DAY1
+CSS module1,module 2
+-vitejs
+
+Day 9 11-feb
+CSS DAY2
+Ending the day
+#1 CSS module 2 remaining assignment2
+#2 CSS module 3 Practice
+#3 CSS module 3 Assignments
+
+***
+
+Day 10 14-feb
+CSS DAY3
+CSS Module4
+
+Day11
+CSS DAY4 15-feb ################
+Respected Madam
+Tomorrow i have presentation/review submission of my project at collage. 
+so please grant me leave on 15/02/2021.
+
+Day 12 - 16 feb
+CSS DAY5
+Ending the day
+#1 Media and Grid practice
+#2 Repository task
+
+----------------------------------------------------------------------------------------------------------
+day13 - 17 feb
+Bootstrap Day1
+Ending the day
+#1 Bootstrap Learning/practice Module1
+
+
+Day 14 - 18 feb
+Bootstrap Day2
+Ending the day
+#1 Bootstrap practice #2 Resume
+
+***
+
+Day 15 - 21 feb
+Bootstrap Day3
+Ending the day
+- Bootsrtap Resume complete 
+- Bootstrap Album Task Complete
+- Working on Bootstap project from training site looplab
+
+Day 16 - 22 feb
+Bootstrap Day4
+Ending the day
+Bootstrap project1 completed looplab
+project 2 started from training site mazuxebook
+
+Day17 - 23 feb
+Bootstrap Day5
+Ending the day
+Project 2 mizuxe completed
+project 3 blogen admin UI start
+
+Day18 - 24 feb
+Bootstrap Day6
+Ending the day
+Project 3 blogen admin UI completed
+Started additional exercise flipkart
+
+hello ma'am
+i have completed total 144hr produactive hr (showing on my desktime) in this month from feb-1 to feb-24.
+but in report you shared with us showing only 121.24 hr
+
+Day19 - 25 feb
+Bootstrap Day7
+Ending the day
+#working on additional task
+
+----------------------------------------------------------------------------------------------------------
+***
+
+Day20 - 28 feb
+Tailwind Day1 
+Ending the day
+#Learn about Tailwind 	
+#Tailwind Setup in vite project 	
+#Tailwind Module 1 practice
+
+Day 21 - 01 march
+Tailwind Day2
+grid,flex
+blog-site
+
+Day 22
+Tailwind Day3
+Ending the day
+#1 blog-site completed
+#2 Watched videos from tutorial-site
+#3 working on portfolio
+
+Day 23 - 3 march
+Tailwind Day 4
+Ending the day
+#1 Portfolio project completed
+#2 Food Ninja Project completed from tutorial site
+#3 Start Mini project with tailwind
+
+Day 24 - 4 march
+Tailwind Day 5
+Ending the day
+#1 working on mini project with tailwind
+
+***
+
+Day 26 - 7 march
+Tailwind Day 6
+Ending the day
+#1 practice tw-elements
+#2 mini project with tailwind
+
+-------------------------------------------------------------
+
+Day 27 - 8 march
+JavaScript Day 1
+Ending the day 
+#1 JavaScript module1 practice
+#2 JavaScript module 1 Assignment
+
+Day 28 - 09 march
+JavaScript Day 2
+Ending the day
+#1 JavaScript Module 2 practice
+#2 JavaScript module 2 Assignment
+
+Day 29 - 10 march
+Javascript Day3
+Ending the day
+#1 Javascript Module 3 practice
+#2 Javascript Module3 Assignment
+
+Day 30 - 11 march
+JavaScript Day 4
+Ending the day
+#1 JavaScript Module 4 practice
+#2 JavaScript Module4 assignment
+
+**
+
+Day 31 - 14 march
+JS Day5-LEAVE ###############
+m5
+
+Day 32 - 15 march
+JS Day6-LEAVE
+m6
+
+Day 33 - 16 march
+JS Day7-LEAVE
+viva
+-----------------------------------------------------------------------
+
+Day 34 - 17 march
+Jquery Day 1
+Ending the day 
+#1 jQuery concepts from tutorial/w3school site 
+#2 working on jQuery module-1 
+#3 Completed JavaScript quiz 1,2,3
+
+*****
+Day 35 - 21 march
+jQuery Day 2
+Ending the day
+#1 jQuery Module 2 Practice
+#2 jQuery Module 2 Assignment
+
+----------------------------------------------------------
+Day 36 - 22 march
+Free
+Ending the day
+#1Watched es6 videos.
+#2Practice of es6 topics.
+#3Solve codezinger problems
+
+Day 37 - 23 march
+Free
+Ending the day
+#1 create index pages
+#2 revision of javaScript/jQuery
+#3 solve code zinger problems
+
+Day 38 - 24 march
+Free
+Ending the day
+#1 Modify index pages
+#2 revision of javaScript/jQuery
+#3 solve code zinger problems
+
+Day 39 - 25 march
+Free
+Ending the day
+#1 Fixed index pages
+#2 revision of javaScript
+#3 code zinger Test
+#4 solve code zinger problems
+
+
+---------------------------------------------------------------
+***
+
+Day 40 - 28 march  ###############
+Day 41 - 29 march
+Day 42 - 30 march
+Final Theory Exams Leave.
+
+Hello Ma'am
+my collage is conducting final year theory examination on 28/03/2022 and 30/03/2022, so i will not be able to attend sessions for three days,
+i need leave for this. so grant me permission for the same..
+
+Day 43 - 31 march
+SF : TypeScript Module1
+
+Day 44 - 1 april  - internal reviewTS
+SF TypeScript Module 2
+
+*****
+
+Day 44 - 4 april  - Internal reviewTS
+SF TypeScript Module 3
+Ending the Day
+#1 TypeScript MCQ Test
+#2 TypeScript Practical Test
+
+Day 45 - 5 april  - Internal reviewTS
+SF TypeScript Module 4,3 practice
+Ending the day
+#1 Made changes to repository as per provided
+#2 Revision of Typescript concepts
+
+Day 46 - 6 april  - External reviewTS
+SF TypeScript Module 4, practice
+Ending the day
+#1 Learned typescript concepts	
+#2 Solve CodeZinger Problems 
+
+----------------------------------------------------------------------
+
+Day 47 - 7 april 
+Angular_React_Vue Day1 m1
+Ending the day
+#1 Setting up Angular/Vue Project
+#2 Done module 1 task for Angular and Vue. 
+
+Day 48 - 8 april
+Angular_React_Vue Day2 m2
+Ending the day
+#1 Setting up React Project
+#2 Done module 1 task for React
+#2 Working on Module 2
+
+****
+Day 49 - 11 april 
+Angular_React_Vue Day3 m3
+Ending the day
+#1 Oneway Twoway data binding
+working on mod 3
+
+Day 50 - 12 april
+Angular_React_Vue Day4 m4-2
+Ending the day
+#1 Completed Module 3 for Angular,Vue 
+#2 Working on Module 4
+
+Day 51 - 13 april
+Angular_React_Vue Day5 m5-1
+Ending the day
+#1 Completed Module 4
+#2 Working on Module 5
+
+Day 52 - 14 april
+Angular_React_Vue Day6  m6
+Module 6
+Ending the day
+#1 Completed Module 6 Practice
+#2 Working on Module 6 Assignment
+
+Day 53 - 15 april 
+Angular_React_Vue Day7  m7
+
+***
+
+Day 54 - 18 april
+Angular_React_Vue Day8   free
+Ending the day
+#Completed Angular_React_Vue Modules
+
+Day 55 - 19 april
+Angular_React_Vue Day9
+Ending the day
+#Completed Angular Module 8 pr
+
+Day 56 - 20 april
+Angular_React_Vue Day10
+Ending the day
+#Completed Angular Module 8 assi
+Ending the day
+#1 Completed module 8 Angular
+#2 Learned validations in angler
+
+Day 57 - 21 april
+Angular_React_Vue Day11
+mod9 self
+
+Day 58 - 22 april
+Angular_React_Vue Day12
+mod 9 VUE FORM self
+
+
+
+******
+
+Day 60 - 25april
+Angular_React_Vue Day13
+VUE FORM module 9
+Ending the day
+#Vue validations
+#Module 9 in vue
+
+Day 61 - 26 april
+Angular_React_Vue Day14
+VUE FORM module 9
+Ending the day
+#Completed Module 9
+#Started Module 10
+
+Day 62,63,64 - 27-29 april
+Angular_React_Vue Day 15-18
+
+*******
+
+Day 65 - 2 May
+Angular_React_Vue Day 19
+half Day leave
+
+Day 66 - 3 May
+Angular_React_Vue Day 20
+Full Day leave
+hello mam i have to go to collage for some issues regarding fees and submit the documents on this tuesday,
+so i need full day off on tuesday(May 3rd) and as i am in porbandar and going to collage which is 450 km away from hometown. 
+I want half day off on Monday (May 2).
+I assure you that i will finish my work on time. 
+so grant me permission for the same..
+
+Day 67,68,69 - 4,5,6 May
+Angular_React_Vue Day 21,22,23
+
+*****
+
+Day 70 - 9 may
+Angular_React_Vue Day 24
+
+
+
+As i have confirmed to mam i have to join from this monday so i need to find pg nearby so i am going to ahmedabad tomorrow to arrange it and it needs leave tomorrow.
+And today my bus is at 5 o'clock in the evening so maybe the day will end 1 hour earlier
+please allow me

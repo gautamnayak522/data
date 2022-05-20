@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day4 assi1</title>
+    <link href="../../../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <h6>University of Mumbai needs to set an online exam for their students. For that they need to set a timer for three
+        hours. After 3 hours exams should be finished.</h6>
+    <button onclick="countdownTimeStart()" id="bt">Start Exam</button>
+   
+    <div class="container">
+        <div class="row text-center">
+            <h2 class="text-decoration-underline">University of Mumbai</h2>
+        </div>
+        <div class="row text-center">
+            <h4>Python Programming</h4>
+            <p id="rem" class="text-danger"></p>
+            <div>
+                <label> What is python : </label>
+                <input type="radio" name="q" required>
+                <label>Programming Language</label>
+
+                <input type="radio" name="q" required>
+                <label>Scripting Language</label>
+            </div>
+            <div>
+                <label> What is python : </label>
+                <input type="radio" name="q1" required>
+                <label>Programming Language</label>
+
+                <input type="radio" name="q1" required>
+                <label>Scripting Language</label>
+            </div>
+            <div>
+                <label> What is python : </label>
+                <input type="radio" name="q2" required>
+                <label>Programming Language</label>
+
+                <input type="radio" name="q2" required>
+                <label>Scripting Language</label>
+            </div>
+            <div>
+                <label> What is python : </label>
+                <input type="radio" name="q3" required>
+                <label>Programming Language</label>
+
+                <input type="radio" name="q3" required>
+                <label>Scripting Language</label>
+            </div>
+            <div>
+                <input type="submit" name="" id="" class="bg-primary"> 
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function countdownTimeStart() {
+            document.getElementById('bt').disabled = true;
+            const next = new Date();
+            next.setHours(next.getHours() + 3); 
+            var x = setInterval(function () {
+                var now = new Date().getTime();
+                var distance = next - now;
+                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                document.getElementById("rem").innerHTML = "Remaining Time : " + hours + "h " + minutes + "m " + seconds + "s ";
+               
+                if (distance < 0) {
+                 clearInterval(x);
+                 alert("Time is up");
+                 document.getElementById("rem").innerHTML = "TIME IS EXPIRED";
+                }
+            }, 1000);
+        }
+        
+    </script>
+</body>
+
+</html>
