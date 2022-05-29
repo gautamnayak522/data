@@ -1,0 +1,73 @@
+const http = require('http');
+const EventEmitter = require('events');
+const fs = require('fs');
+
+class MyEmitter extends EventEmitter {}
+
+const myEmitter = new MyEmitter();
+myEmitter.on('examOver', () => {
+  console.log('Exam is over!!');
+});
+myEmitter.on('examStart', () => {
+  console.log('Exam is started you have 3 hours until exam is over!!');
+});
+
+const server = http.createServer((req, res) => {
+  if (req.url === '/') {
+    fs.readFile('./index.html', (error, data) => {
+      if (error) {
+        console.log(error);
+      } else {
+        res.write(data);
+        res.end();
+        myEmitter.emit('examStart');
+      }
+    });
+  }
+  if (req.url === '/examOver') {
+    myEmitter.emit('examOver');
+    res.write('Exam is over!!');
+    res.end();
+  }
+});
+server.listen(3000, () => {
+  console.log('listing at port 3000');
+});
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="timmer">Internal Exam</h1>
+  </body>
+  <script>
+    var totalTime = new Date().getTime() + 10800000;
+    var timeInterval = setInterval(() => {
+      var now = new Date().getTime();
+      var timeFrame = totalTime - now;
+      var hours = Math.floor((timeFrame / (1000 * 60 * 60)) % 24);
+      var minutes = Math.floor((timeFrame / (1000 * 60)) % 60);
+      var seconds = Math.floor((timeFrame / 1000) % 60);
+      document.getElementById(
+        'timmer'
+      ).innerHTML = `${hours} h  ${minutes} m  ${seconds} s `;
+      if (timeFrame < 1) {
+        clearInterval(timeInterval);
+        document.getElementById('timmer').innerHTML = `Exam is over`;
+        fetch('http://localhost:3000/examOver');
+      }
+    }, 1000);
+  </script>
+</html>
