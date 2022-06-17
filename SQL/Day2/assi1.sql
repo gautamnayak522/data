@@ -1,7 +1,5 @@
-use AdventureWorks2019
+-- Write a SQL statement to change the Email column of Employees table with ‘not available’ for all employees.
+SELECT * FROM Employees
 
-select * from Person.EmailAddress
-
-
-UPDATE Person.EmailAddress 
-SET EmailAddress='Not Available';
+UPDATE Employees
+SET Email='Not Available';

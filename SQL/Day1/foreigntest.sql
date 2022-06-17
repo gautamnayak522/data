@@ -17,3 +17,9 @@ insert into Employee values (1,'Gautam',1);
 insert into Employee values (2,'Yash',3);
 insert into Employee values (2,'Raj',4);
 select * from Employee
+
+
+create table department(
+DeptId int primary key,
+DeptName varchar(50) NOT NULL
+);

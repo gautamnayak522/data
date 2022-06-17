@@ -164,6 +164,18 @@ SELECT * FROM Employees;
 INSERT INTO Employees VALUES (1,'abc','XYZ','ABC@GMAIL.COM','1111111111','11/11/2015',1,55000,5000,2,1);
 INSERT INTO Employees VALUES (6,'abc','XYZ','ABC@GMAIL.COM','1111111111','11/11/2015',2,55000,5000,2,3);
 
+SELECT TOP 1 * FROM Employees order by Employee_id desc;
+
+
+SELECT CONCAT(11,33,99) AS Result
+
+CREATE TABLE PhoneNumbers (ClientName VARCHAR(100),AreaCode INT , PhoneNumber BIGINT,Dt DATETIME)
+ 
+INSERT INTO PhoneNumbers VALUES('Name-1',301,2929420,GETDATE())
+INSERT INTO PhoneNumbers VALUES('Name-1',925,5781725,GETDATE())
+INSERT INTO PhoneNumbers VALUES('Name-3',207,3188796,GETDATE())
+
+select * from PhoneNumbers
 
 
 
