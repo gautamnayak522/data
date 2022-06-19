@@ -1,0 +1,23 @@
+SELECT * FROM EMPLOYEES
+SELECT * FROM EMPLOYEES WHERE FirstName IN('STEVEN','NEENA')
+SELECT * FROM EMPLOYEES WHERE FirstName LIKE 'S%N'
+
+CREATE TABLE Persons (
+    Personid int IDENTITY(1,1) PRIMARY KEY,
+    LastName varchar(255) NOT NULL,
+    FirstName varchar(255),
+    Age int
+);
+
+SELECT * FROM Persons
+
+INSERT INTO PERSONS (FirstName,LastName,Age) VALUES('AAA','BBB',25)
+
+INSERT INTO PERSONS (FirstName,LastName,Age) VALUES('CCC','DDD',20)
+
+DELETE FROM Persons
+TRUNCATE TABLE Persons
+
+SELECT * FROM Persons WHERE AGE BETWEEN 0 and 25
+
+SELECT DISTINCT JobId from Employees;

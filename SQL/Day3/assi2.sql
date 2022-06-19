@@ -1,0 +1,1 @@
+SELECT FirstName, REPLICATE('$', 10-LEN(Salary)) + CONVERT(varchar(10),Salary) AS SALARY FROM Employees

@@ -1,0 +1,40 @@
+Rule for the Naming Conventions....
+
+
+
+ 1) All MSSQL keywords like "CREATE", "INSERT", "SELECT", "UPDATE", "DELETE", "FROM", "WHERE", "ORDER BY", "LIMIT" etc. should be in Capital letters only. Also, ensure that all MSSQL function names like "NOW()", "DATE_FORMAT()", "CONCAT" etc. are in Capital letters. 
+
+ 2) Database names, Table names and Column names should always be in Small case.
+ 
+ 3) primary key name should be like tablenameid. example, employeeid,departmentid.
+
+ 4) Always give Aliases to table names and column names while writing "SELECT" and "UPDATE" queries. Don't use special characters for aliases. Generally, table aliases are single word aliases consisting of two to three characters and column aliases are the combination of one, two or more words. Always remember that aliases should be short in size and meaningful.
+ 
+ 5) While writing any MSSQL query, start each MSSQL major keyword with new line. 
+    See the following example, in which all keywords like "SELECT", "FROM", "WHERE", "AND", "ORDER BY" starts with new line: 
+
+              Example :1 
+
+                SELECT pst.propertysubtypeid propSubTypeId, pst.subtype propSubTypeName
+		FROM propertysubtype pst
+		WHERE pst.propertysubtypeid = '10'
+		AND (pst.endeffdt IS NULL OR pst.endeffdt = 0 OR pst.endeffdt > NOW())			
+		ORDER BY pst.subtype, pst.recid
+        
+              Example :2
+  
+                INSERT INTO tablename
+		(column1, column2)
+		VALUES
+		(value1, value2),
+		(value3, value4);
+
+ 6) Always use "ORDER BY" clause in "SELECT" queries.
+
+ 7) Make sure you give single space after each comma separating the column names in SELECT query (e.g.:- "pst.recid propSubTypeId, pst.subtype propSubTypeName"), while inserting records (eg:- column1, column2), separating arguments in any MSSQL functions (e.g.:- FORMAT(CEILING(4.8), 1)), etc.
+
+ 8) Use single quotes while comparing any values.
+ 
+ 9) Each table should have endeffdt/flagdeleted column.
+
+ 10) datatype of primary key must be bigint.
