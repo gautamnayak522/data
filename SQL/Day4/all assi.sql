@@ -1,0 +1,43 @@
+--SELECT * FROM Employees
+
+--1
+SELECT DENSE_RANK() OVER( ORDER BY Salary desc) AS [Rank], FirstName, Salary FROM Employees  
+
+--2
+SELECT * FROM (SELECT DENSE_RANK() OVER( ORDER BY Salary desc) AS [Rank], FirstName, Salary FROM Employees) as tmp WHERE tmp.[Rank]=4
+
+--3
+SELECT DepartmentID,SALARY FROM Employees Where DepartmentID='90';
+
+SELECT DepartmentId, SUM(SALARY) AS 'SUM OF SALARY'
+FROM EMPLOYEES
+GROUP BY DepartmentID
+
+
+--4
+
+SELECT DepartmentId, SUM(SALARY) AS 'SUM OF SALARY'
+FROM EMPLOYEES
+GROUP BY DepartmentID ORDER BY 'SUM OF SALARY' desc
+
+
+--5
+
+SELECT DepartmentId, MAX(SALARY) AS 'MAX SALARY'
+FROM EMPLOYEES
+GROUP BY DepartmentID ORDER BY 'MAX SALARY'
+
+--6
+
+SELECT DepartmentId, MIN(SALARY) AS 'MIN SALARY'
+FROM EMPLOYEES
+GROUP BY DepartmentID ORDER BY 'MIN SALARY'
+
+--7
+
+SELECT DepartmentId, SUM(SALARY) AS 'SUM OF SALARY'
+FROM EMPLOYEES 
+GROUP BY DepartmentID 
+HAVING SUM(Salary)>50000
+ORDER BY 'SUM OF SALARY' desc 
+

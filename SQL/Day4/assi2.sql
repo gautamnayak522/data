@@ -1,0 +1,1 @@
+SELECT * FROM (SELECT DENSE_RANK() OVER( ORDER BY Salary desc) AS [Rank], FirstName, Salary FROM Employees) as tmp WHERE tmp.[Rank]=4
