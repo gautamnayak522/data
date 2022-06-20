@@ -1,3 +1,5 @@
+--String Functions
+
 SELECT ASCII ('A') AS ASCII_OF_A
 SELECT CHAR(65)
 
