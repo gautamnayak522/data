@@ -95,5 +95,42 @@ emp-jobs-dept-man
 coutry-region
 
 
+---5
+SELECT e.first_name, e.last_name, e.job_id, e.department_id, d.department_name 
+FROM employees e 
+JOIN departments d 
+ON (e.department_id = d.department_id) 
+JOIN locations l ON 
+(d.location_id = l.location_id) 
+WHERE LOWER(l.city) = 'London';
+
+--6
+SELECT department_name AS 'Department Name', 
+COUNT(*) AS 'No of Employees' 
+FROM departments 
+INNER JOIN employees 
+ON employees.department_id = departments.department_id 
+GROUP BY departments.department_id, department_name 
+ORDER BY department_name;
+
+--7
+SELECT employee_id, job_title, end_date-start_date Days FROM job_history 
+NATURAL JOIN jobs 
+WHERE department_id=90;
+
+--8
+SELECT d.department_name, e.first_name, l.city 
+FROM departments d 
+JOIN employees e 
+ON (d.manager_id = e.employee_id) 
+JOIN locations l USING (location_id);
+
+--9
+SELECT first_name, last_name, hire_date, salary, 
+(DATEDIFF(now(), hire_date))/365 Experience 
+FROM departments d JOIN employees e 
+ON (d.manager_id = e.employee_id) 
+WHERE (DATEDIFF(now(), hire_date))/365>15;
+
 
 
