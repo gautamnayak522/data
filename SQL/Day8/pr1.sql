@@ -1,0 +1,26 @@
+USE AdventureWorks2019
+
+SELECT * FROM Person.Person
+
+SELECT * FROM Person.Person WHERE LastName='Myer'
+
+
+-- CREATE INDEX ON FIRSTNAME IN PERSON.PERSON TABLE
+
+CREATE INDEX IX_F
+ON Person.Person(LastName)
+
+
+--DISABLE INDEX
+
+ALTER INDEX IX_F ON Person.Person
+DISABLE
+
+-- ENABLE INDEX
+
+ALTER INDEX IX_F ON Person.Person
+REBUILD
+
+--DROP INDEX
+
+DROP INDEX IX_F ON Person.Person
