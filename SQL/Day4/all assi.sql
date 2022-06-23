@@ -1,5 +1,6 @@
 --SELECT * FROM Employees
-
+use Test
+SELECT * FROM Employees
 --1
 SELECT DENSE_RANK() OVER( ORDER BY Salary desc) AS [Rank], FirstName, Salary FROM Employees  
 
