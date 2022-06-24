@@ -1,4 +1,3 @@
---Day4
 
 SELECT DENSE_RANK() OVER( ORDER BY Salary desc) AS [Rank], FirstName, Salary FROM Employees  
 
@@ -52,4 +51,3 @@ GROUP BY DepartmentID
 )
 
 SELECT * FROM DEPT_WITH_MAX_OF_SALARY ORDER BY 'MAX SALARY'
-
