@@ -1,0 +1,11 @@
+SELECT EMPLOYEE_ID From Employees
+
+CREATE VIEW VW_EMP_TASK7
+AS
+SELECT jh1.employee_id, j1.job_title,jh1.DEPARTMENT_ID,jh1.START_DATE,jh1.END_DATE, DATEDIFF(Day,jh1.START_DATE,jh1.END_DATE) AS 'DIFF OF DAYS'
+FROM 
+job_history jh1 JOIN jobs j1
+ON j1.JOB_ID=jh1.JOB_ID
+WHERE jh1.department_id=90;
+
+SELECT * FROM VW_EMP_TASK7
