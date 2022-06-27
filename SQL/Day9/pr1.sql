@@ -1,0 +1,51 @@
+USE myDB
+
+DECLARE @a int
+SET @a=5
+PRINT @a
+
+SELECT * FROM employees
+
+DECLARE @SALARY int 
+SELECT @SALARY= SALARY FROM employees WHERE EMPLOYEE_ID=100
+PRINT 'SALARY IS : ' + CAST( @SALARY AS varchar)
+IF @SALARY<25000
+BEGIN
+PRINT 'SALARY IS LESS THAN 25000'
+END
+ELSE
+BEGIN
+PRINT 'SALARY GREATER THAN 25000'
+PRINT @SALARY
+END
+
+
+DECLARE @Gender char(5)
+SET @Gender='M'
+PRINT @Gender
+PRINT CASE @Gender
+WHEN 'M' THEN 'MALE'
+WHEN 'F' THEN 'FEMALE'
+ELSE 'NOT Specified'
+END
+
+
+
+CREATE TABLE bikeshop  
+(  
+ Id INT PRIMARY KEY IDENTITY,  
+ bike_name VARCHAR (50) NOT NULL,  
+ price FLOAT  
+)  
+
+SELECT * FROM bikeshop
+
+DECLARE @count INT
+SET @count = 1
+PRINT @count
+
+WHILE @count<=5
+BEGIN
+INSERT INTO bikeshop VALUES('BIKE'+CAST(@count AS varchar),@count*5000)
+SET @count=@count+1
+END;
