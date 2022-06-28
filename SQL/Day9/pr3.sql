@@ -23,21 +23,11 @@ FROM OPENJSON(@json)
     lastName NVARCHAR(50) '$.info.surname',  
     age INT,
     dateOfBirth DATETIME2 '$.dob',
-    skills NVARCHAR(MAX) '$.info.skills' AS JSON  
+    skills NVARCHAR(MAX) '$.info.skills' AS JSON
   )
-
-
 
 
   select * from #information
-
-
-  CREATE TABLE #skills
-  (
-	id int,
-	skill varchar(50)
-  )
-
 
 	CREATE TABLE #personal
 	(
@@ -53,40 +43,69 @@ FROM OPENJSON(@json)
   select id, firstName, lastName, age, dateOfBirth  from #information
   group by id,firstName,lastName,age,dateOfBirth
 
-  SELECT * FROM string_split('Basavaraj,Kalpana,Shree',',')
-  
-  SELECT value
-FROM   STRING_SPLIT ('apple,banana,pineapple,grapes', ',') 
 
-SELECT value
-FROM   STRING_SPLIT ('["SQL", "C#", "Azure"]', ',') 
+  CREATE TABLE #skills
+  (
+	id int,
+	skill varchar(50)
+  )
 
-
+  /*
+  insert into #skills
+  select t1.id,t2.skill 
+  from #information t1 CROSS JOIN #information t2
+  --ON t1.id=t2.id
+  where t2.skill is not null
+  */
 
   insert into #skills
+  select id,
+  value skill  
+  from #information 
+  CROSS APPLY STRING_SPLIT(skill, ',') 
+  where skill is not null
 
-  select id,skill from #information where skill is not null
+  insert into #skills
+  select id,
+  value skill  
+  from #information 
+  CROSS APPLY  STRING_SPLIT(SUBSTRING(skill,2,LEN(skill)-2), ',') 
+  where skill is not null
 
   SELECT skill from #information where skill is not null
 
 
---  SELECT * FROM (SELECT * FROM string_split(skill,','))subq 
-
-	delete from #information
-    delete from #skills
-    delete from #personal
-
   select * from #information
   select * from #skills
-  select * from #personal
+  select * from #personal    
 
 
+						delete from #information
+						delete from #skills
+						delete from #personal
+
+
+  ------------------
+	
+	SELECT * FROM (SELECT * FROM string_split('a,b,c',','))subq 
+
+    SELECT * FROM string_split('Basavaraj,Kalpana,Shree',',')
+  
+  SELECT value
+FROM   STRING_SPLIT ('apple,banana,pineapple,grapes', ',') 
+
+SELECT value FROM   STRING_SPLIT(SUBSTRING('["SQL", "C#", "Azure"]',2,LEN('["SQL", "C#", "Azure"]')-2), ',') 
+
+----------------
 
 
   SELECT * FROM Employees2
 
+  -- WITHOUT_ARRAY_WRAPPER
+
 SELECT *
 FROM Employees2
 FOR JSON PATH, WITHOUT_ARRAY_WRAPPER
+
 
 
