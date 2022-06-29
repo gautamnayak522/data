@@ -38,32 +38,40 @@ INSERT INTO addassi.Marks VALUES (4,23,40,77,45,'D')
 SELECT * FROM addassi.Student
 SELECT * FROM addassi.Marks
 
+-----------------------------------------------
+
+
 ALTER PROCEDURE AVG_BASED_ON_BOARD @board varchar(50),@percentageforScience int,@percentageforMath int,@percentageforEnglish int
 AS
 BEGIN
 	
-	--SELECT * FROM Employees2 WHERE Department=@Department
-	SELECT s.StudentId,s.Name,s.Address,s.Board,m.Science,m.Math,m.English,m.Average,m.GRADE,
+	SELECT s.StudentId,s.Name,s.Address,s.Board,m.Science,m.Math,m.English,
+	
 	CASE 
-	WHEN @board='State' THEN  ((m.Science*@percentageforScience/100)+(m.Math*@percentageforMath/100)+(m.English*@percentageforEnglish/100))
-	WHEN @board='CBSE' THEN  ((m.Science*.50)+(m.Math*.40)+(m.English*.10))
-	END AS AVERAGE2,
+	WHEN @board=s.Board THEN  ((m.Science*@percentageforScience/100)+(m.Math*@percentageforMath/100)+(m.English*@percentageforEnglish/100))
+	WHEN @board=s.Board THEN  ((m.Science*@percentageforScience/100)+(m.Math*@percentageforMath/100)+(m.English*@percentageforEnglish/100)) 
+	ELSE m.Average
+	END AS 'AVERAGE2',
 
 	--CASE 
-	--WHEN convert(INT,AVERAGE2)>50 THEN 'P'
-	--WHEN convert(INT,AVERAGE2)<50 THEN 'f'
-	--END AS 'gRADE2'
-
+	--WHEN @board=s.Board AND 'AVERAGE2'>50 THEN 'A'
+	--WHEN @board=s.Board AND 'AVERAGE2'<50 THEN  'B'
+	--ELSE 'F'
+	--END AS GRADE2
 
 	CASE 
-	WHEN @board = 'State' AND (m.Science*@percentageforScience/100)+(m.Math*@percentageforMath/100)+(m.English*@percentageforEnglish/100) >=80 THEN 'A+'
-	WHEN @board = 'State' AND (m.Science*@percentageforScience/100)+(m.Math*@percentageforMath/100)+(m.English*@percentageforEnglish/100) > 45 THEN 'A+'
-	WHEN @board = 'State' AND (m.Science*@percentageforScience/100)+(m.Math*@percentageforMath/100)+(m.English*@percentageforEnglish/100) > 45 THEN 'A+'
-	WHEN @board = 'CBSE' AND (m.Science*@percentageforScience/100)+(m.Math*@percentageforMath/100)+(m.English*@percentageforEnglish/100) > 45 THEN 'A+'
-	WHEN @board = 'CBSE' AND (m.Science*@percentageforScience/100)+(m.Math*@percentageforMath/100)+(m.English*@percentageforEnglish/100) > 45 THEN 'A+'
-	WHEN @board = 'CBSE' AND (m.Science*@percentageforScience/100)+(m.Math*@percentageforMath/100)+(m.English*@percentageforEnglish/100) > 45 THEN 'A+'
-	ELSE 'B+' END as GRADE2	
-
+	WHEN @board = s.Board AND (m.Science*@percentageforScience/100)+(m.Math*@percentageforMath/100)+(m.English*@percentageforEnglish/100) >=80 THEN 'A+'
+	WHEN @board =s.Board AND (m.Science*@percentageforScience/100)+(m.Math*@percentageforMath/100)+(m.English*@percentageforEnglish/100) >=60 THEN 'A'
+	WHEN @board = s.Board AND (m.Science*@percentageforScience/100)+(m.Math*@percentageforMath/100)+(m.English*@percentageforEnglish/100) >=50 THEN 'B'
+	WHEN @board = s.Board AND (m.Science*@percentageforScience/100)+(m.Math*@percentageforMath/100)+(m.English*@percentageforEnglish/100) >=35 THEN 'C'
+	WHEN @board = s.Board AND (m.Science*@percentageforScience/100)+(m.Math*@percentageforMath/100)+(m.English*@percentageforEnglish/100) < 35 THEN 'D'
+	WHEN @board = s.Board AND (m.Science*@percentageforScience/100)+(m.Math*@percentageforMath/100)+(m.English*@percentageforEnglish/100) >=95 THEN 'A+'
+	WHEN @board = s.Board AND (m.Science*@percentageforScience/100)+(m.Math*@percentageforMath/100)+(m.English*@percentageforEnglish/100) >=85 THEN 'A'
+	WHEN @board = s.Board AND (m.Science*@percentageforScience/100)+(m.Math*@percentageforMath/100)+(m.English*@percentageforEnglish/100) >=75 THEN 'B'
+	WHEN @board = s.Board AND (m.Science*@percentageforScience/100)+(m.Math*@percentageforMath/100)+(m.English*@percentageforEnglish/100) >50 THEN 'C'
+	WHEN @board = s.Board AND (m.Science*@percentageforScience/100)+(m.Math*@percentageforMath/100)+(m.English*@percentageforEnglish/100) <50 THEN 'D'
+	ELSE m.GRADE 
+	END as GRADE2	
 
 	FROM addassi.Student s JOIN addassi.Marks m
 	ON s.StudentId = m.StudentId
@@ -72,11 +80,19 @@ BEGIN
 END
 
 
-
 EXEC AVG_BASED_ON_BOARD 'State',40,40,20
 EXEC  AVG_BASED_ON_BOARD 'CBSE',50,40,10
 
 
+SELECT * FROM addassi.Student
+SELECT * FROM addassi.Marks
 
+
+--OLD GRADES
+
+SELECT s.StudentId,s.Name,s.Address,s.Board,m.Science,m.Math,m.English,m.Average,m.GRADE 
+FROM addassi.Student s JOIN addassi.Marks m
+ON s.StudentId=m.StudentId
+ORDER BY s.StudentId
 
 

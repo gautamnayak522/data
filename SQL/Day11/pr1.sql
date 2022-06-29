@@ -1,3 +1,5 @@
+USE myDB
+
 SELECT * FROM Employees2
 
 CREATE PROCEDURE PRC1
@@ -6,7 +8,7 @@ BEGIN
 	SELECT * FROM Employees2
 END
 
-PRC1
+PRC1 3
 
 ALTER PROCEDURE PRC1 @id int
 AS
@@ -14,7 +16,7 @@ BEGIN
 	SELECT * FROM Employees2 WHERE Employee_Id=@id
 END
 
-PRC1 3
+EXEC PRC1 3
 
 -----------------------------
 
