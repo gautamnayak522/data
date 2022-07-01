@@ -1,3 +1,8 @@
+/*
+Assignment Module 11,Module 12 (Q1-Q6)
+Module 11 : Q1,Q3,Q5
+Module 12 : Q2,Q4,Q6
+*/
 --BRANCH table
 
 CREATE TABLE BRANCH
@@ -62,18 +67,18 @@ INSERT INTO BORROW VALUES ('481','KRANTI','NEHRU PLACE',3000)
 
 
 -----------------------------
-
+USE myDB
 SELECT * FROM BRANCH
 SELECT * FROM CUSTOMER
 SELECT * FROM DEPOSIT
 SELECT * FROM BORROW
 
 -------------------------------------
---#1
+--#1   Q1
 --Create a Store Procedure which will accept name of the customer as input parameter and product the following output, 
 --List Names of Customers who are Depositors and have Same Branch City as that of input parameter customer’s Name.
 
-CREATE PROCEDURE SP_CUSTOMER_OP @cname VARCHAR(50)
+ALTER PROCEDURE SP_CUSTOMER_OP @cname VARCHAR(50)
 AS
 BEGIN
 	SET NOCOUNT ON
@@ -85,14 +90,19 @@ BEGIN
 	FROM DEPOSIT D JOIN BRANCH B
 	ON D.BNAME=B.BNAME
 	WHERE B.CITY=@CITY
+
+	SELECT CNAME FROM DEPOSIT WHERE BNAME IN(SELECT BNAME FROM BRANCH  WHERE CITY=@CITY)
+
 END
 
-EXECUTE SP_CUSTOMER_OP 'PRAMOD'
+EXECUTE SP_CUSTOMER_OP 'KRANTI'
+EXECUTE SP_CUSTOMER_OP 'SANDIP'
+EXECUTE SP_CUSTOMER_OP 'MADHURI'
 
 DROP PROCEDURE SP_CUSTOMER_OP
 
 
---#2 Create a Store Procedure that will accept city name and returns the number of customers in that city.
+--#2 Q3 Create a Store Procedure that will accept city name and returns the number of customers in that city.
 
 
 CREATE PROCEDURE COUNT_CUSTOMER_IN_CITY @CITY VARCHAR(50)
@@ -113,11 +123,18 @@ EXECUTE COUNT_CUSTOMER_IN_CITY 'BARODA'
 
 
 
---#3 Count the Number of Customers Living in the City where Branch is Located
+--#3 Q5 Count the Number of Customers Living in the City where Branch is Located
 
-SELECT * FROM CUSTOMER
+
 SELECT * FROM BRANCH
+SELECT * FROM CUSTOMER
 
 SELECT COUNT(CNAME) AS 'COUNT OF CUSTOMER IN CITY' FROM CUSTOMER WHERE CITY IN (SELECT DISTINCT CITY FROM BRANCH)
 
+SELECT * FROM BRANCH
+SELECT * FROM CUSTOMER
 
+SELECT b.CITY,COUNT(c.cname) AS 'No of Customers' FROM 
+(SELECT DISTINCT CITY FROM BRANCH) b LEFT JOIN CUSTOMER c
+ON c.CITY = b.CITY
+GROUP BY b.CITY

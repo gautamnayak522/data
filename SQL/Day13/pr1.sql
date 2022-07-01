@@ -14,23 +14,7 @@ END
 
 SELECT First_Name,Salary,dbo.COUNTTOTALSALARY(Salary) AS 'UPDATED SALARY' FROM Employees2
 
-
-
-
-CREATE FUNCTION CALCULATE_PF (@BASICSALARY INT)
-RETURNS	int
-AS
-BEGIN
-	DECLARE @RES int
-	SET @RES = @BASICSALARY*.12
-	RETURN @RES
-END
-
-SELECT dbo.CALCULATE_PF(5000) AS PF
-
-SELECT First_Name,Salary,dbo.CALCULATE_PF(Salary) AS 'PF' FROM Employees2
-
-
+-------------
 
 CREATE FUNCTION GET_Employee(@id INT)
 RETURNS VARCHAR(50)
@@ -42,7 +26,7 @@ END
 PRINT dbo.GET_Employee(1)
 
 
-
+----------------
 
 CREATE FUNCTION GET_Employees()
 RETURNS TABLE
@@ -53,3 +37,14 @@ AS
 DROP FUNCTION GET_Employees
 
 SELECT * FROM dbo.GET_Employees()
+
+
+
+
+
+
+
+
+
+
+
