@@ -15,7 +15,7 @@ OPEN cursor_emp_sal;
 
 FETCH NEXT FROM cursor_emp_sal INTO 
     @name, 
-    @salary;
+    @salary; 
 
 WHILE @@FETCH_STATUS = 0
     BEGIN
