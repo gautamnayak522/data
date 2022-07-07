@@ -17,8 +17,9 @@ A non-clustering index is defined in the non-ordering field of the table.
 This type of indexing method helps you to improve the performance of queries that use keys which are not assigned as a primary key. 
 A non-clustered index allows you to add a unique key for a table.
 
-
+For more :
 -- https://www.guru99.com/clustered-vs-non-clustered-index.html#:~:text=Clustered%20index%20stores%20data%20pages%20in%20the%20leaf,whereas%20the%20Non-clustered%20index%20requires%20additional%20disk%20space.
+(Source)
 
 KEY DIFFERENCE
 - Cluster index is a type of index that sorts the data rows in the table on their key values whereas the Non-clustered index stores the data at one location and indices at another location.

@@ -1,8 +1,17 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Additional Assignment"
+    "\\Additional Assignment",
+    "\\Day10",
+    "\\Day13",
+    "\\Day14",
+    "\\Day15",
+    "\\Day16"
   ],
+<<<<<<< HEAD
   "SelectedNode": "\\Additional Assignment\\add assi4.sql",
+=======
+  "SelectedNode": "\\Employees.sql",
+>>>>>>> 3ed3e187a6b85afa33497de39b6c5fe800e2d56a
   "PreviewInSolutionExplorer": false
 }
