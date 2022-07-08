@@ -2,12 +2,15 @@
   "ExpandedNodes": [
     "",
     "\\Additional Assignment",
-    "\\Day10",
-    "\\Day13",
-    "\\Day14",
-    "\\Day15",
-    "\\Day16"
+    "\\Day1",
+    "\\Day11",
+    "\\Day3",
+    "\\Day4",
+    "\\Day5",
+    "\\Day6",
+    "\\Day7",
+    "\\Day9"
   ],
-  "SelectedNode": "\\Employees.sql",
+  "SelectedNode": "\\Day11\\pr2.sql",
   "PreviewInSolutionExplorer": false
 }

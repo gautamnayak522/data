@@ -82,6 +82,10 @@ SELECT id, Name, Address AS "Addressinfo.Address",city AS "Addressinfo.city", DO
 FROM studentdata
 FOR JSON PATH
 
+SELECT id, Name, Address AS "Addressinfo.Address",city AS "Addressinfo.city", DOB,Standard
+FROM studentdata
+FOR JSON AUTO
+
 
 --------
 DECLARE @stud_json2 NVARCHAR(MAX)

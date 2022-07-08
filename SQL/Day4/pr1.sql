@@ -42,4 +42,23 @@ SELECT Name, Point
 FROM Member  
 
 
+SELECT * FROM Employees2
+
+SELECT * FROM 
+(
+select First_Name,SALARY, DENSE_RANK() OVER(ORDER BY SALARY DESC) RANK
+FROM Employees2
+)TMP
+WHERE RANK = 2
+
+
+
+WITH MYTAST
+AS
+(
+	select First_Name,SALARY, DENSE_RANK() OVER(ORDER BY SALARY DESC) RANK
+FROM Employees2
+)
+select * from MYTAST where RANK=2
+
 
