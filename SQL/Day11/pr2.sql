@@ -1,4 +1,4 @@
-USE myDB
+xUSE myDB
 
 SELECT * FROM Employees2
 
