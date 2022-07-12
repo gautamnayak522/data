@@ -52,6 +52,27 @@ SELECT studentid,SUM(hours) FROM studenthours
 GROUP BY studentid
 
 
+
+WITH temp(Name, JulHrs, AugHrs, SepHrs, OctHrs) AS
+(SELECT S.name, 
+COALESCE((SELECT H.hours WHERE DATEPART(MM, H.date) = 7), 0),
+COALESCE((SELECT H.hours WHERE DATEPART(MM, H.date) = 8), 0),
+COALESCE((SELECT H.hours WHERE DATEPART(MM, H.date) = 9), 0),
+COALESCE((SELECT H.hours WHERE DATEPART(MM, H.date) = 10), 0) 
+FROM student.Student S
+LEFT JOIN student.StudentHours H
+ON S.studentid = H.studentid) 
+
+SELECT Name, 
+SUM(JulHrs) AS [Working Hours for Jul], 
+SUM(AugHrs) AS [Working Hours for Aug], 
+SUM(SepHrs) AS [Working Hours for Sep], 
+SUM(OctHrs) AS [Working Hours for Oct]
+FROM temp
+GROUP BY Name;
+
+
+
 --Q3
 
 
