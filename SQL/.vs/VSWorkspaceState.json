@@ -2,14 +2,23 @@
   "ExpandedNodes": [
     "",
     "\\Additional Assignment",
+<<<<<<< HEAD
     "\\Day10",
     "\\Day11",
+=======
+>>>>>>> 6481942836091e4ff14da431b60b17e035059139
     "\\Day12",
     "\\Day13",
     "\\Day14",
     "\\Day15",
+<<<<<<< HEAD
     "\\Day16"
   ],
   "SelectedNode": "\\Day11\\add assi avg.sql",
+=======
+    "\\Z Material"
+  ],
+  "SelectedNode": "\\Day15\\assi1.sql",
+>>>>>>> 6481942836091e4ff14da431b60b17e035059139
   "PreviewInSolutionExplorer": false
 }
