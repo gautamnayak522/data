@@ -12,7 +12,7 @@ SET Quantity = 10
 
 BEGIN TRANSACTION
 
-INSERT INTO Products VALUES('Headphones',1500,12)
+INSERT INTO Products VALUES('HHH',1500,12)
 
 UPDATE Products 
 SET Quantity = 25
